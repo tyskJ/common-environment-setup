@@ -42,7 +42,8 @@ Windows
 =====================================================================
 Terraform 共通設定
 =====================================================================
-* gitignore
+
+1. gitignore
 ==============
 * `gitignore.io <https://www.toptal.com/developers/gitignore>`_ にて *terraform* と入力し *.gitignore* を作成
 * terraformコードを格納するフォルダに保存
