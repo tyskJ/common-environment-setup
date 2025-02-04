@@ -24,4 +24,4 @@ Powrshellにて以下コマンドを実行
 ===============================
 リファレンス
 -------------------------------
-* https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html
+* `AWS CLI の最新バージョンのインストールまたは更新 <https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html>`_
