@@ -71,3 +71,10 @@ Windows
   * *nvm* で管理している *node.js* のパッケージは「 *~/AppData/Roaming/nvm/{nodeバージョン番号}/* 」に格納されている
   * *npm* によってグローバルインストールしたパッケージは「 *~/AppData/Roaming/nvm/{nodeバージョン番号}/node_modules/* 」に格納されている
   * グローバルパッケージは *node* のバージョン毎に管理されているため、 *node* のバージョンを切り替えた際は再度グローバルパッケージをインストールする必要がある
+
+参考資料
+===============================
+ブログ
+-------------------------------
+* `nvmを使った際に、グローバルパッケージはどこに保存されるのかを確認したかったのでメモ <https://qiita.com/izumi_0x01/items/b969628628e4d39f1052>`_
+* `nvm-windowsでnode.jsのバージョン管理をする【Windows】 <https://qiita.com/nezumori/items/504b26d26f3e6e3009e3>`_
