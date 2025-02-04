@@ -8,7 +8,7 @@ Windows
 ===================
 1. *rain* リソースバイナリダウンロード
 -------------------------------------
-* `GitHub <https://github.com/aws-cloudformation/rain>`_ から64bit版バイナリ( *rain-v1.21.0_darwin-amd64.zip* )をダウンロード
+* `GitHub <https://github.com/aws-cloudformation/rain>`_ から64bit版バイナリ( *rain-v1.21.0_windows-amd64.zip* )をダウンロード
 
 .. code-block:: bash
 
