@@ -39,8 +39,20 @@ Windows
   tenv tf list # インストールしたバージョンを確認
   tenv tf use v1.10.3
 
+=====================================================================
+Terraform 共通設定
+=====================================================================
+gitignore
+---------------------
+* `gitignore.io <https://www.toptal.com/developers/gitignore>`_ にて *terraform* と入力し *.gitignore* を作成
+* terraformコードを格納するフォルダに保存
+
 参考資料
 ===============================
+リファレンス
+-------------------------------
+* `gitignore.io <https://www.toptal.com/developers/gitignore>`_
+
 ブログ
 -------------------------------
 * `新しいTerraformのバージョンマネージャー tenv を試してみた <https://dev.classmethod.jp/articles/try-tenv-terraform-version-manager/>`_
