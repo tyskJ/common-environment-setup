@@ -10,13 +10,13 @@ Windows
 -----------------------------------
 Powrshellにて以下コマンドを実行
 
-.. code-block:: Powrshell
+.. code-block:: powershell
 
   msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi /qn
 
 2. インストール確認
 -----------------------------------
-.. code-block:: Powrshell
+.. code-block:: powershell
 
   aws --version
 
