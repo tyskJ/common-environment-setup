@@ -32,3 +32,4 @@ Windows
 ブログ
 ---------------------------------------------------------------------
 * `【Windows】GnuPG(GPG)インストール方法:(2022年版) <https://www.ochappa.net/posts/gpg-win-setup>`_
+* `macOS / Windows の Git 用に GnuPG (GPG) を準備する <https://qiita.com/watagashi/items/9425599678f6f93a0910>`_
