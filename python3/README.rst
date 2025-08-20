@@ -1,6 +1,49 @@
 .. image:: ./doc/001samune.png
 
 =====================================================================
+Python インストール手順
+=====================================================================
+
+Windows
+=====================================================================
+1. *pyenv* (Pythonバージョン管理ツール)インストール
+---------------------------------------------------------------------
+* Windowsは *pyenv-win* をインストールする
+* `GitHub <https://github.com/pyenv-win/pyenv-win/blob/master/README.md#installation>`_ からcloneする
+
+.. code-block:: bash
+
+  git clone https://github.com/pyenv-win/pyenv-win.git "$HOME\.pyenv"
+
+2. ディレクトリにPATHを通す
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  echo 'export PATH="$HOME/.pyenv/pyenv-win/shims:$PATH"' >> ~/.bashrc
+  echo 'export PATH="$HOME/.pyenv/pyenv-win/bin:$PATH"' >> ~/.bashrc
+  source ~/.bashrc
+
+.. note::
+
+  * `pyenv --version` で `pyenv` のバージョン確認が可能
+  * バージョン確認時にWindows環境変数への登録を促す文言が表示され気になる方はPowershell で登録してください
+
+3. *python3.13* インストール
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  pyenv install 3.13.0
+
+.. note::
+
+  * 以下コマンドでインストール可能バージョン一覧を取得できます
+
+  .. code-block:: bash
+
+    pyenv install --list
+
+
+=====================================================================
 Pythonエラー解消
 =====================================================================
 
