@@ -25,7 +25,7 @@ Windows
 
 .. note::
 
-  * `pyenv --version` で `pyenv` のバージョン確認が可能
+  * *pyenv --version* で *pyenv* のバージョン確認が可能
   * バージョン確認時にWindows環境変数への登録を促す文言が表示され気になる方はPowershell で登録してください
 
 3. *python3.13* インストール
@@ -36,12 +36,8 @@ Windows
 
 .. note::
 
-  * 以下コマンドでインストール可能バージョン一覧を取得できます
-
-  .. code-block:: bash
-
-    pyenv install --list
-
+  * *pyenv install --list* でインストール可能バージョン一覧を取得できます
+  * *pyenv versions* でインストール済み *python* バージョン確認が可能
 
 =====================================================================
 Pythonエラー解消
