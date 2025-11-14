@@ -52,6 +52,36 @@ Windows
 
   * *oci -v* でバージョンが表示されれば OK です
 
+Linux
+=====================================================================
+1. *OCI CLI* インストール
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  cd
+  curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh -o install.sh
+  bash install.sh --accept-all-defaults
+  rm -rf install.sh
+
+.. note::
+
+  * *--accept-all-defaults* はオプションで、インストール時の設定が全てデフォルトで良ければつけたままで実行してください
+  * バイナリの配置先を変更したい場合や、オプションパッケージを入れたい場合は、 *--accept-all-defaults* は付けずに実行してください
+  * インストーラーを実行する際、 *Python* がローカルにない場合は、依存関係として自動でインストールされます
+
+
+2. ディレクトリにPATHを通す
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  echo 'export PATH="$HOME/lib/oracle-cli/bin:$PATH"' >> ~/.bashrc
+  source ~/.bashrc
+
+.. note::
+
+  * *oci -v* でバージョンが表示されれば OK です
+
+
 =====================================================================
 初回のみ実施
 =====================================================================
