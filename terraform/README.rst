@@ -49,7 +49,50 @@ Windows
 
 .. note::
 
-  バージョンはインストールした値に修正してください
+  * バージョンはインストールした値に修正してください
+  * *terraform -v* でバージョンが表示されればOKです
+
+Linux
+=====================================================================
+1. *cosign(v.2.0+)* インストール
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  cd
+  LATEST_VERSION=$(curl https://api.github.com/repos/sigstore/cosign/releases/latest | jq -r .tag_name | tr -d "v")
+  curl -O -L "https://github.com/sigstore/cosign/releases/latest/download/cosign-${LATEST_VERSION}-1.x86_64.rpm"
+  sudo rpm -ivh cosign-${LATEST_VERSION}-1.x86_64.rpm && rm -rf cosign-${LATEST_VERSION}-1.x86_64.rpm
+
+2. リポジトリ登録
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  curl -1sLf 'https://dl.cloudsmith.io/public/tofuutils/tenv/cfg/setup/bash.rpm.sh' | sudo bash
+
+3. *tenv* インストール
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  sudo dnf install tenv -y
+
+4. *Terraform* 最新版インストール
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  tenv tf install latest # ~/.tenv/Terraform/バージョン番号/に保存される
+
+5. *v.1.10.3* を使用
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  tenv tf list # インストールしたバージョンを確認
+  tenv tf use v1.10.3
+
+.. note::
+
+  * バージョンはインストールした値に修正してください
+  * *terraform -v* でバージョンが表示されればOKです
+
 
 =====================================================================
 Terraform 共通設定
@@ -78,6 +121,7 @@ Windows
 =====================================================================
 リファレンス
 ---------------------------------------------------------------------
+* `tofuutils/tenv - GitHub <https://github.com/tofuutils/tenv>`_
 * `gitignore.io <https://www.toptal.com/developers/gitignore>`_
 
 ブログ
