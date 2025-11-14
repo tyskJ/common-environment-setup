@@ -127,3 +127,4 @@ Windows
 ブログ
 ---------------------------------------------------------------------
 * `新しいTerraformのバージョンマネージャー tenv を試してみた <https://dev.classmethod.jp/articles/try-tenv-terraform-version-manager/>`_
+* `kazmax - Linuxで自宅サーバー <https://kazmax.zpp.jp/linux_beginner/yum_repository_enable_disable.html>`_
