@@ -45,6 +45,52 @@ Windows
 
   pyenv global 3.13.0
 
+Linux
+=====================================================================
+1. *Amazon Linux 2023* のみ実施
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  sudo dnf update -y
+  sudo dnf groupinstall -y "Development Tools"
+  sudo dnf install -y bzip2-devel ncurses-devel libffi-devel readline-devel openssl-devel zlib-devel
+
+
+2. *pyenv* (Pythonバージョン管理ツール)インストール
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  curl -fsSL https://pyenv.run | bash
+
+3. ディレクトリにPATHを通す
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+  echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+  echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
+
+4. *python3.13* インストール
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  pyenv install 3.13.0
+
+.. note::
+
+  * *pyenv install --list* でインストール可能バージョン一覧を取得できます
+  * *pyenv versions* でインストール済み *python* バージョン確認が可能
+
+5. *Global* 設定
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  pyenv global 3.13.0
+
+.. note::
+
+  * *python -V* でバージョンが表示されればOKです
+
 =====================================================================
 Pythonエラー解消
 =====================================================================
@@ -67,6 +113,10 @@ Python3の文字エンコーディング設定を *UTF-8* に変更
 
 参考資料
 =====================================================================
+リファレンス
+---------------------------------------------------------------------
+* `pyenv - GitHub <https://github.com/pyenv/pyenv>`_
+
 ブログ
 ---------------------------------------------------------------------
 * `PythonでUTF-8エンコーディングを正しく扱う方法 <https://www.python.digibeatrix.com/archives/990>`_
