@@ -1,0 +1,30 @@
+# ==== Commit Messages ====
+:gitmoji: Message
+
+# ==== Commit Messages(Template) ====
+# :gitmoji: Message [#issue number]
+
+# ==== Commit Messages(Sample) ====
+# :tada: first commit
+
+# ==== gitmoji ====
+# ------ 汎用 ------
+# 🎉 :tada: Init: 初コミット
+# 🐛 :bug: Fix: バグ修正
+# ♻️ :recycle: Refactor: リファクタリング・コードスタイル・コードフォーマット修正など
+# ✨ :sparkles: Feat 機能追加・更新
+# 📝 :memo: Docs: 文章/ドキュメント修正
+
+# ==== prefix ====
+# Feat: 新機能
+# Fix: バグ修正
+# Docs: ドキュメントのみの変更
+# Style: コードの意味に影響しない変更（空白、フォーマット、セミコロンの欠落など）
+# Refactor: バグ修正も機能追加もしないコード変更
+# Perf: パフォーマンスを改善するコード変更
+# Test: 不足しているテストの追加または既存テストの修正
+# Chore: ビルドプロセスや補助ツール、ドキュメント生成などのライブラリの変更
+
+# ==== rule ====
+# 1. 本文では、何を、なぜ、どのように、を説明する
+# 2. 関連するissueがある場合はissue番号を付与する
