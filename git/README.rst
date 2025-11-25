@@ -36,3 +36,4 @@ Usage
 * `初心者必見！Gitのコミットメッセージのテンプレートの作成方法について - Qiita <https://qiita.com/shun198/items/72511bd95e13cf0be88c>`_
 * `Gitのコミットメッセージをしっかり書こうという話【備忘録的共有】 - SIOS Tech.Lab <https://tech-lab.sios.jp/archives/34421>`_
 * `GitHubのコミットメッセージに絵文字を入れて開発効率をあげる - Qiita <https://qiita.com/Jung0/items/0a9a7a97a2c17f92d3c5>`_
+* `gitコマンドでMissing or invalid credentials. Error: connect ECONNREFUSED…が出たときの解決法 - Qiita <https://qiita.com/hachiware1024/items/ba91448a475c531dcdf7>`_
