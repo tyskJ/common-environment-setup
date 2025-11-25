@@ -17,13 +17,36 @@ Windows (Git for Windows)
   * 一度 IDE(もしくはターミナル)を閉じてください
   * その後、 ``mise -v`` でバージョンが表示されればOKです
 
-2. *shims* へのPATHを通す
+2. Activate
 ---------------------------------------------------------------------
-* インストールした各ツールへのPATHを管理する *shims* を認識するためにPATHを通す
+* *mise activate* メソッド （ ``mise x|exec`` or ``mise r|run`` ） を毎度指定して *mise* コンテキスト(インストールしたツールや環境変数)をロードする方法があります
+* ただし今回は **Shims** を使います
 
 .. code-block:: bash
 
   echo 'PATH=$PATH:$HOME/AppData/Local/mise/shims' >> ~/.bashrc
+  source ~/.bashrc
+
+Linux
+=====================================================================
+1. *mise* インストール
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  curl https://mise.run | sh
+
+.. note::
+
+  * ``mise -v`` でバージョンが表示されればOKです
+
+2. Activate
+---------------------------------------------------------------------
+* *mise activate* メソッド （ ``mise x|exec`` or ``mise r|run`` ） を毎度指定して *mise* コンテキスト(インストールしたツールや環境変数)をロードする方法があります
+* ただし今回は **Shims** を使います
+
+.. code-block:: bash
+
+  echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc
   source ~/.bashrc
 
 
