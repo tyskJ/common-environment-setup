@@ -14,6 +14,7 @@ Windows
 リファレンス
 ---------------------------------------------------------------------
 * `Getting Started - MISE-EN-PLACE <https://mise.jdx.dev/getting-started.html>`_
+* `Registry - MISE-EN-PLACE <https://mise.jdx.dev/registry.html>`_
 
 ブログ
 ---------------------------------------------------------------------
