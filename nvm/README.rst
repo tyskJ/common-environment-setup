@@ -11,7 +11,7 @@ Windows
 * `GitHub <https://github.com/coreybutler/nvm-windows>`_ から *nvm-setup.exe* をダウンロード
 * デフォルト設定でインストール
 
-1. *node.js* (LTS版) インストール
+2. *node.js* (LTS版) インストール
 ---------------------------------------------------------------------
 .. code-block:: bash
 
