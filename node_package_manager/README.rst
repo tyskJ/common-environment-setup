@@ -15,11 +15,13 @@ pnpm (Performat npm)
 1. *pnpm* インストール
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
+
   curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 2. PATHを通す
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
+
   echo 'export PATH="$HOME/AppData/Local/pnpm:$PATH"' >> ~/.bashrc
   source ~/.bashrc
 
@@ -29,6 +31,7 @@ pnpm (Performat npm)
 3. ``npm`` / ``npx`` 抑止
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
+
   echo "alias npm='echo \"WARNING: npm は実行しないでください\" && false'" >> ~/.bashrc
   echo "alias npx='echo \"WARNING: npx は実行しないでください\" && false'" >> ~/.bashrc
   source ~/.bashrc
@@ -40,6 +43,7 @@ pnpm (Performat npm)
 * ``--location`` パラメータには ``global`` (環境全体) or ``project`` (プロジェクト毎) で指定可能
 
 .. code-block:: bash
+
   pnpm config set --location=global minimumReleaseAge 10080
 
 .. note::
