@@ -27,6 +27,28 @@ Windows (Git for Windows)
   echo 'PATH=$PATH:$HOME/AppData/Local/mise/shims' >> ~/.bashrc
   source ~/.bashrc
 
+Mac
+=====================================================================
+1. *mise* インストール
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  brew install mise
+
+.. note::
+
+  * ``mise -v`` でバージョンが表示されればOKです
+
+2. Activate
+---------------------------------------------------------------------
+* *mise activate* メソッド （ ``mise x|exec`` or ``mise r|run`` ） を毎度指定して *mise* コンテキスト(インストールしたツールや環境変数)をロードする方法があります
+* ただし今回は **Shims** を使います
+
+.. code-block:: zsh
+
+  echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
+  source ~/.zshrc
+
 Linux
 =====================================================================
 1. *mise* インストール
