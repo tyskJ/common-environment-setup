@@ -73,7 +73,15 @@ Key Chain ( Only MacOS )
 ---------------------------------------------------------------------
 .. code-block:: zsh
 
-  git config --list     #
+  git config --list  # 設定確認（ ``credential.helper=osxkeychain`` が表示されていればオンになっている ）
+
+.. code-block:: zsh
+
+  git config --show-origin --get credential.helper  # 設定ファイル場所確認
+
+.. code-block:: zsh
+
+  設定ファイル開き、 ``credential.helper=osxkeychain`` と記載のある行をコメントアウトし保存
 
 
 参考資料
