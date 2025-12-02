@@ -79,7 +79,7 @@ Key Chain ( Only MacOS )
 
   git config --show-origin --get credential.helper  # 設定ファイル場所確認
 
-* 設定ファイル開き、 ``credential.helper=osxkeychain`` と記載のある行をコメントアウトし保存
+→ 設定ファイル開き、 ``credential.helper=osxkeychain`` と記載のある行をコメントアウトし保存
 
 
 参考資料
