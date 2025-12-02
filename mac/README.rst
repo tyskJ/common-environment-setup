@@ -116,6 +116,22 @@ Mac Recommend Settings
 * `.zshrc <./.zshrc>`_
 
 
+3. エディター/IDE ( ``VSCode`` )
+---------------------------------------------------------------------
+* `拡張機能一覧 <./vscode-extensions.txt>`_
+
+.. code-block:: zsh
+
+  brew install --cask visual-studio-code
+
+.. code-block:: zsh
+
+  cat vscode-extensions.txt | xargs -L 1 code --install-extension
+
+.. note::
+
+  * ``code --list-extensions > vscode-extensions.txt`` で他端末のVSCodeのインストール済み拡張機能をエクスポートできます
+
 
 参考資料
 =====================================================================

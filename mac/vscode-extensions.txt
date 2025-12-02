@@ -1,0 +1,16 @@
+amazonwebservices.aws-toolkit-vscode
+github.vscode-github-actions
+golang.go
+hashicorp.terraform
+ms-ceintl.vscode-language-pack-ja
+pkief.material-icon-theme
+vscodevim.vim
+aws-scripting-guy.cform
+kddejong.vscode-cfn-lint
+hediet.vscode-drawio
+dbaeumer.vscode-eslint
+mhutchie.git-graph
+oderwat.indent-rainbow
+christian-kohler.path-intellisense
+esbenp.prettier-vscode
+redhat.vscode-yaml
