@@ -31,6 +31,11 @@ Windows
 
 参考資料
 =====================================================================
+リファレンス
+---------------------------------------------------------------------
+* `nvm-sh / nvm - GitHub <https://github.com/nvm-sh/nvm>`_
+
 ブログ
 ---------------------------------------------------------------------
 * `nvm-windowsでnode.jsのバージョン管理をする【Windows】 <https://qiita.com/nezumori/items/504b26d26f3e6e3009e3>`_
+* `[Node.js] nvmインストール手順(MacOS) - Zenn <https://zenn.dev/nok_c7/articles/536ac2d35bf9e6>`_
