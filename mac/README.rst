@@ -149,3 +149,6 @@ Mac Recommend Settings
 * `pmsetでMacの省電力設定を最適化したい。 - k n note <https://nkmrkisk.com/archives/2338>`_
 * `pmsetコマンドの基礎から応用まで世界一やさしく解説 - Ohenzi Blog <https://ohenziblog.com/pmset-method/>`_
 * `MacBook Pro 2020のバッテリーについて - Appleコミュニティ <https://discussionsjapan.apple.com/thread/251498546?sortBy=rank>`_
+* `Homebrew のアンインストール・クリーンアップ完全手順 - T-CREATOR <https://t-cr.jp/article/8hh1j127i5b7yge>`_
+* `【完全ガイド】Homebrew Caskでインストールしたアプリを安全にアンインストールする方法【Mac対応】 - ちょげぶろぐ <https://www.choge-blog.com/programming/homebrew-cask-uninstall/#google_vignette>`_
+* `homebrewでインストールしたパッケージ全部削除する - Qiita <https://qiita.com/anon5r/items/d262c80b718739caf076>`_
