@@ -108,7 +108,19 @@ Mac Recommend Settings
 
 開発環境設定
 =====================================================================
-1. パッケージ管理 ( ``Homebrew`` )
+1. ComputeName / HostName 変更
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  sudo scutil --set ComputerName yourname
+  sudo scutil --set LocalHostName yourname
+
+.. note:: info
+
+  * ``scutil --get ComputerName`` / ``scutil --get LocalHostName`` で確認可能
+
+
+2. パッケージ管理 ( ``Homebrew`` )
 ---------------------------------------------------------------------
 .. code-block:: zsh
 
@@ -122,12 +134,12 @@ Mac Recommend Settings
   echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
   eval "$(/opt/homebrew/bin/brew shellenv)"
 
-2. シェル設定 ( ``zsh`` )
+3. シェル設定 ( ``zsh`` )
 ---------------------------------------------------------------------
 * `.zshrc <./.zshrc>`_
 
 
-3. エディター/IDE ( ``VSCode`` )
+4. エディター/IDE ( ``VSCode`` )
 ---------------------------------------------------------------------
 * `拡張機能一覧 <./vscode-extensions.txt>`_
 
