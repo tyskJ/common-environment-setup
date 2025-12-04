@@ -141,11 +141,11 @@ Mac Recommend Settings
 
 4. エディター/IDE ( ``VSCode`` )
 ---------------------------------------------------------------------
-* `拡張機能一覧 <./vscode-extensions.txt>`_
-
 .. code-block:: zsh
 
   brew install --cask visual-studio-code
+
+* `拡張機能一覧 <./vscode-extensions.txt>`_
 
 .. code-block:: zsh
 
