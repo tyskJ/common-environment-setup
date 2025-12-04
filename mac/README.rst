@@ -114,7 +114,7 @@ Mac Recommend Settings
 
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-＊ 環境変数設定
+* 環境変数設定
 
 .. code-block:: zsh
 
