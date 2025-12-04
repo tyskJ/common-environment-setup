@@ -115,7 +115,7 @@ Mac Recommend Settings
   sudo scutil --set ComputerName yourname
   sudo scutil --set LocalHostName yourname
 
-.. note:: info
+.. note::
 
   * ``scutil --get ComputerName`` / ``scutil --get LocalHostName`` で確認可能
 
