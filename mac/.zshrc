@@ -84,3 +84,4 @@ alias G='| grep'          # パイプして grep に流す
 alias CP='| pbcopy'       # パイプの結果をクリップボードにコピー（mac向け）
 alias ..='cd ../'         # 親ディレクトリへ移動
 alias ...='cd ../../'     # 2階層上へ移動
+
