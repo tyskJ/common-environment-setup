@@ -111,6 +111,12 @@ Mac Recommend Settings
 
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+.. code-block:: zsh
+
+  echo >> ~/.zprofile
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+
 2. シェル設定 ( ``zsh`` )
 ---------------------------------------------------------------------
 * `.zshrc <./.zshrc>`_
