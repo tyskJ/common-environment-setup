@@ -73,6 +73,10 @@ Linux
   echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc
   source ~/.bashrc
 
+Config ( ``~/.config/mise/config.toml`` )
+=====================================================================
+* `config.toml <./config.toml>`_
+
 
 参考資料
 =====================================================================
@@ -89,5 +93,6 @@ Linux
 * `mise を使用した開発ツールの管理についておさらいしてみた - DeveloperIO <https://dev.classmethod.jp/articles/setup-and-manage-dev-tools-with-mise/>`_
 * `環境管理ツール｢mise｣について - Serverworks <https://blog.serverworks.co.jp/mise>`_
 * `miseでwindows版PHP実行環境を構築 - Zenn <https://zenn.dev/dozo/articles/b23896d2945367>`_
+* `mise を使用した開発ツールの管理についておさらいしてみた - DevelopersIO <https://dev.classmethod.jp/articles/setup-and-manage-dev-tools-with-mise/>`_
 
 
