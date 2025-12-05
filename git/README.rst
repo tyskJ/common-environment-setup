@@ -67,6 +67,14 @@ Commit Template
   cp ./.commit_template ~/.commit_template
   git config --global commit.template ~/.commit_template
 
+Global Ignore Settings
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  cp ./.gitignore_global ~/.gitignore_global
+  git config --global core.excludesfile ~/.gitignore_global
+
+
 Credentials
 =====================================================================
 Key Chain ( Only MacOS )
@@ -99,3 +107,4 @@ Key Chain ( Only MacOS )
 * `GitHubのコミットメッセージに絵文字を入れて開発効率をあげる - Qiita <https://qiita.com/Jung0/items/0a9a7a97a2c17f92d3c5>`_
 * `gitコマンドでMissing or invalid credentials. Error: connect ECONNREFUSED…が出たときの解決法 - Qiita <https://qiita.com/hachiware1024/items/ba91448a475c531dcdf7>`_
 * `Macでgitのcredential.helper=osxkeychainにアアアアアッてなって削除した話 - Hatena Blog <https://ropupu-ropupu.hatenablog.com/entry/2018/02/06/204431>`_
+* `.gitignore 以外のファイルを除外する方法 - Qiita <https://qiita.com/Aotumuri/items/033b3c7ab30fc0130eb7>`_
