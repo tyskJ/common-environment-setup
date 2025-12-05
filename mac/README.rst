@@ -63,7 +63,7 @@ Mac Recommend Settings
   # ゴミ箱を空にする際の確認警告を無効化する設定
   defaults write com.apple.finder WarnOnEmptyTrash -bool false
   # ネットワークドライブでの.DS_Store作成を無効化
-  defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+  defaults write com.apple.desktopservices DSDontWriteNetworkStores true
   # 設定を有効にするためにFinderを再起動
   killall Finder
 
