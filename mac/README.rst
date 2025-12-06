@@ -208,7 +208,7 @@ Mac Recommend Settings
   
   brew install --cask iterm2
 
-* ``Oh My Zsh`` インストール
+* ``Oh My Zsh`` インストール (オプション)
 
 .. code-block:: zsh
 
@@ -225,6 +225,10 @@ Mac Recommend Settings
   ZSH_THEME="robbyrussell"
   plugins=(git)
   source $ZSH/oh-my-zsh.sh
+
+.. note::
+
+  * ``source ~/.zshrc`` で設定を読み込ませる
 
 アプリケーション
 =====================================================================
