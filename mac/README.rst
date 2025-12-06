@@ -50,7 +50,7 @@ Mac Recommend Settings
   defaults write com.apple.finder ShowPathbar -bool true                        # Finderウィンドウ下部のパスバーを表示する設定
   defaults write com.apple.LaunchServices LSQuarantine -bool false              # 未確認ファイルを開く際の警告を無効化する設定
   defaults write com.apple.finder WarnOnEmptyTrash -bool false                  # ゴミ箱を空にする際の確認警告を無効化する設定
-  defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true  # ネットワークドライブでの.DS_Store作成を無効化
+  defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE  # ネットワークドライブでの.DS_Store作成を無効化
   sudo launchctl bootout user/$(id -u)                                          # 設定を有効にするためにサインアウト
 
 .. note::
