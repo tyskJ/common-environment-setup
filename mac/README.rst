@@ -200,6 +200,12 @@ Mac Recommend Settings
 ---------------------------------------------------------------------
 * `こちら <../mise-en-place>`_
 
+7. ターミナル ( ``iterm2`` )
+---------------------------------------------------------------------
+.. code-block:: zsh
+  
+  brew install --cask iterm2
+
 アプリケーション
 =====================================================================
 1. シークレット管理 ( ``KeePassXC`` )
@@ -232,3 +238,6 @@ Mac Recommend Settings
 * `Homebrew のアンインストール・クリーンアップ完全手順 - T-CREATOR <https://t-cr.jp/article/8hh1j127i5b7yge>`_
 * `【完全ガイド】Homebrew Caskでインストールしたアプリを安全にアンインストールする方法【Mac対応】 - ちょげぶろぐ <https://www.choge-blog.com/programming/homebrew-cask-uninstall/#google_vignette>`_
 * `homebrewでインストールしたパッケージ全部削除する - Qiita <https://qiita.com/anon5r/items/d262c80b718739caf076>`_
+* `Macのターミナルをカスタマイズ (Iterm2、Oh My Zsh) - Zenn <https://zenn.dev/kamiko/articles/5692e06cbe5ef6>`_
+* `MacでiTerm2をインストールする完全ガイド：標準ターミナルを卒業して開発効率を10倍にする方法 - ちょげぶろぐ <https://www.choge-blog.com/programming/mac-iterm2-install/>`_
+* `macOS イケてるターミナル環境構築ガイド（iTerm2 + Zsh編）- Zenn <https://zenn.dev/aung_yu/articles/e45fd503addde2>`_
