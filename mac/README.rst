@@ -258,6 +258,12 @@ Mac Recommend Settings
 
   brew install --cask alt-tab
 
+8. アンインストール支援ツール ( ``AppCleaner`` )
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  brew install --cask appcleaner
+
 参考資料
 =====================================================================
 リファレンス
