@@ -224,7 +224,7 @@ Mac Recommend Settings
 
   # ctrl + r で過去に実行したコマンドを選択できるようにする。
   function peco-select-history() {
-    BUFFER=$(\history -n -r 1 | distinct | peco --query "$LBUFFER")
+    BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
     CURSOR=$#BUFFER
     zle reset-prompt
   }
