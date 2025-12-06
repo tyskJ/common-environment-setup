@@ -231,6 +231,11 @@ Mac Recommend Settings
   zle -N peco-select-history
   bindkey '^r' peco-select-history
 
+9. エディタ ( ``zed`` )
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  brew install --cask zed
 
 アプリケーション
 =====================================================================
