@@ -252,6 +252,12 @@ Mac Recommend Settings
 
   brew install --cask slack
 
+7. ウィンドウ切り替えツール ( ``AltTab`` )
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  brew install --cask alt-tab
+
 参考資料
 =====================================================================
 リファレンス
@@ -281,3 +287,4 @@ Mac Recommend Settings
 * `【Mac】Alfredの使い方｜初期設定から必須Workflowまで徹底解説 - エンベーダー <https://envader.plus/article/114>`_
 * `【Mac】Windowsライクな画面分割アプリRectangleがいいぞ！ <https://computerlife.hateblo.jp/entry/rectangle>`_
 * `Macのメニューバーに表示されるアイコンの表示・非表示を切り替えられるBartenderの代替ツール、『Ice』が良さげ - Sweet Escape <https://www.keisuke69.net/entry/2025/02/04/092143>`_
+* `MacでもWindowsライクにウィンドウ切り替えができる「AltTab」が便利だった - note <https://note.com/murasaki5/n/nc860be25a0f7>`_
