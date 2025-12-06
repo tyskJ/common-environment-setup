@@ -228,6 +228,18 @@ Mac Recommend Settings
 
   brew install --cask alfred
 
+3. 画面分割 ( ``Rectangle`` )
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  brew install --cask rectangle
+
+4. メニューバー整理 ( ``Ice`` )
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  brew install --cask jordanbaird-ice
+
 参考資料
 =====================================================================
 リファレンス
@@ -254,3 +266,5 @@ Mac Recommend Settings
 * `年末の大掃除にdotfilesをつくろう - Zenn <https://zenn.dev/cloud_ace/articles/1d57617f83cd74>`_
 * `Alfredを使いこなせてない君に！【Alfredの使い方完全版】- Qiita <https://qiita.com/jackchuka/items/ccd3f66f6dd00481b98b>`_
 * `【Mac】Alfredの使い方｜初期設定から必須Workflowまで徹底解説 - エンベーダー <https://envader.plus/article/114>`_
+* `【Mac】Windowsライクな画面分割アプリRectangleがいいぞ！ <https://computerlife.hateblo.jp/entry/rectangle>`_
+* `Macのメニューバーに表示されるアイコンの表示・非表示を切り替えられるBartenderの代替ツール、『Ice』が良さげ - Sweet Escape <https://www.keisuke69.net/entry/2025/02/04/092143>`_
