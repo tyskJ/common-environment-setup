@@ -253,3 +253,4 @@ Mac Recommend Settings
 * `ようこそdotfilesの世界へ - Qiita <https://qiita.com/yutkat/items/c6c7584d9795799ee164>`_
 * `年末の大掃除にdotfilesをつくろう - Zenn <https://zenn.dev/cloud_ace/articles/1d57617f83cd74>`_
 * `Alfredを使いこなせてない君に！【Alfredの使い方完全版】- Qiita <https://qiita.com/jackchuka/items/ccd3f66f6dd00481b98b>`_
+* `【Mac】Alfredの使い方｜初期設定から必須Workflowまで徹底解説 - エンベーダー <https://envader.plus/article/114>`_
