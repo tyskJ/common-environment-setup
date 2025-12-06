@@ -202,9 +202,29 @@ Mac Recommend Settings
 
 7. ターミナル ( ``iterm2`` )
 ---------------------------------------------------------------------
+* ``iterm2`` インストール
+
 .. code-block:: zsh
   
   brew install --cask iterm2
+
+* ``Oh My Zsh`` インストール
+
+.. code-block:: zsh
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+.. note::
+
+  * インストール時に ``.zshrc`` への上書きを自動で行わない
+  * 手動で以下を ``.zshrc`` に追記する
+
+.. code-block:: zsh
+
+  export ZSH="$HOME/.oh-my-zsh"
+  ZSH_THEME="robbyrussell"
+  plugins=(git)
+  source $ZSH/oh-my-zsh.sh
 
 アプリケーション
 =====================================================================
@@ -241,3 +261,5 @@ Mac Recommend Settings
 * `Macのターミナルをカスタマイズ (Iterm2、Oh My Zsh) - Zenn <https://zenn.dev/kamiko/articles/5692e06cbe5ef6>`_
 * `MacでiTerm2をインストールする完全ガイド：標準ターミナルを卒業して開発効率を10倍にする方法 - ちょげぶろぐ <https://www.choge-blog.com/programming/mac-iterm2-install/>`_
 * `macOS イケてるターミナル環境構築ガイド（iTerm2 + Zsh編）- Zenn <https://zenn.dev/aung_yu/articles/e45fd503addde2>`_
+* `ようこそdotfilesの世界へ - Qiita <https://qiita.com/yutkat/items/c6c7584d9795799ee164>`_
+* `年末の大掃除にdotfilesをつくろう - Zenn <https://zenn.dev/cloud_ace/articles/1d57617f83cd74>`_
