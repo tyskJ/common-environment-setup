@@ -210,6 +210,28 @@ Mac Recommend Settings
 
   * ``source ~/.zshrc`` で設定を読み込ませる
 
+8. コマンド候補検索ツール ( ``peco`` )
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  brew install peco
+
+.. note::
+
+  * 手動で以下を ``.zshrc`` に追記する
+
+.. code-block:: zsh
+
+  # ctrl + r で過去に実行したコマンドを選択できるようにする。
+  function peco-select-history() {
+    BUFFER=$(\history -n -r 1 | distinct | peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle reset-prompt
+  }
+  zle -N peco-select-history
+  bindkey '^r' peco-select-history
+
+
 アプリケーション
 =====================================================================
 1. シークレット管理 ( ``KeePassXC`` )
