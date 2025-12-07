@@ -237,6 +237,12 @@ Mac Recommend Settings
 
   brew install --cask zed
 
+10. ``Windows App``
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  brew install --cask windows-app
+
 アプリケーション
 =====================================================================
 1. シークレット管理 ( ``KeePassXC`` )
