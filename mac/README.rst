@@ -102,6 +102,10 @@ Mac Recommend Settings
   defaults write com.apple.screencapture show-thumbnail -bool false
   # ウィンドウキャプチャ時の影（ドロップシャドウ）を無効化する設定
   defaults write com.apple.screencapture disable-shadow -bool true
+  # ファイル名変更
+  defaults write com.apple.screencapture name "screenshot"
+  # ファイル名末尾を日付から連番に変更
+  defaults write com.apple.screencapture include-date -bool false
 
 8. 電源設定
 ---------------------------------------------------------------------
