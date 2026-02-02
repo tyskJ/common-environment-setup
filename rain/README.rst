@@ -8,7 +8,7 @@ Windows
 =====================================================================
 1. *rain* リソースバイナリダウンロード
 ---------------------------------------------------------------------
-* `GitHub <https://github.com/aws-cloudformation/rain>`_ から64bit版バイナリ( *rain-v1.21.0_windows-amd64.zip* )をダウンロード
+* `GitHub release page <https://github.com/aws-cloudformation/rain/releases>`_ から64bit版バイナリ( *rain-v1.21.0_windows-amd64.zip* )をダウンロード
 
 .. code-block:: bash
 
@@ -31,8 +31,28 @@ Windows
   sed -i '$aexport PATH=$PATH:$HOME/rain-${RAIN_V}_windows-amd64' ~/.bashrc
   source ~/.bashrc
 
+Linux
+=====================================================================
+1. *rain* リソースバイナリダウンロード
+---------------------------------------------------------------------
+* `GitHub release page <https://github.com/aws-cloudformation/rain/releases>`_ から64bit版バイナリ( *rain-v1.24.2_linux-amd64.zip* )をダウンロード
+
+  RAIN_V=v1.24.2
+  curl -OL https://github.com/aws-cloudformation/rain/releases/download/${RAIN_V}/{rain-${RAIN_V}_linux-amd64.zip}
+
+2. バイナリデータを任意のフォルダに解凍
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  unzip rain-${RAIN_V}_linux-amd64.zip
+  mkdir -p ~/bin; mv rain-${RAIN_V}_linux-amd64/rain ~/bin/; rm -rf rain*
+
 参考資料
 =====================================================================
+リファレンス
+-------------------------------
+* `GitHub - aws-cloudformation/rain <https://github.com/aws-cloudformation/rain>`_
 ブログ
 -------------------------------
 * `WindowsでCloudFormation Rainを動くようにしてみた <https://dev.classmethod.jp/articles/try-cloudformation-rain-on-windows/#toc-7>`_
+
