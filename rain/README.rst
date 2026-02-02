@@ -37,8 +37,10 @@ Linux
 ---------------------------------------------------------------------
 * `GitHub release page <https://github.com/aws-cloudformation/rain/releases>`_ から64bit版バイナリ( *rain-v1.24.2_linux-amd64.zip* )をダウンロード
 
+.. code-block:: bash
+
   RAIN_V=v1.24.2
-  curl -OL https://github.com/aws-cloudformation/rain/releases/download/${RAIN_V}/{rain-${RAIN_V}_linux-amd64.zip}
+  curl -OL https://github.com/aws-cloudformation/rain/releases/download/${RAIN_V}/rain-${RAIN_V}_linux-amd64.zip
 
 2. バイナリデータを任意のフォルダに解凍
 ---------------------------------------------------------------------
@@ -55,4 +57,5 @@ Linux
 ブログ
 -------------------------------
 * `WindowsでCloudFormation Rainを動くようにしてみた <https://dev.classmethod.jp/articles/try-cloudformation-rain-on-windows/#toc-7>`_
+
 
