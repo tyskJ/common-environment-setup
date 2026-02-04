@@ -17,3 +17,7 @@ Mac
 リファレンス
 ---------------------------------------------------------------------
 * `GitHub - cfn-lint <https://github.com/aws-cloudformation/cfn-lint>`_
+
+ブログ
+---------------------------------------------------------------------
+* `VS Code拡張機能を追加してCloudFormation開発環境をレベルアップする - DevelopersIO <https://dev.classmethod.jp/articles/20211008-vscode-extention-settings/>`_
