@@ -31,6 +31,14 @@ Windows
   sed -i '$aexport PATH=$PATH:$HOME/rain-${RAIN_V}_windows-amd64' ~/.bashrc
   source ~/.bashrc
 
+Mac
+=====================================================================
+1. *rain* インストール
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  brew install rain
+
 Linux
 =====================================================================
 1. *rain* リソースバイナリダウンロード
@@ -57,5 +65,6 @@ Linux
 ブログ
 -------------------------------
 * `WindowsでCloudFormation Rainを動くようにしてみた <https://dev.classmethod.jp/articles/try-cloudformation-rain-on-windows/#toc-7>`_
+
 
 
