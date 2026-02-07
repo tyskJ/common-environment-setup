@@ -1,0 +1,30 @@
+{
+    "cfnLint.path": "/opt/homebrew/bin/cfn-lint",
+// Custom tags for the parser to use
+    "yaml.customTags": [
+        "!And",
+        "!If",
+        "!Not",
+        "!Equals",
+        "!Or",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Cidr",
+        "!Ref",
+        "!Ref mapping",
+        "!Sub",
+        "!Sub sequence",
+        "!Sub scalar",
+        "!GetAtt",
+        "!GetAtt sequence",
+        "!GetAZs",
+        "!ImportValue",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Join sequence",
+    ],
+    // Enable/disable default YAML formatter (requires restart)
+    "yaml.format.enable": true
+}
