@@ -28,6 +28,24 @@ Windows
   * バージョン `nvm list` でインストール済みの値を指定
   * *nvm* で管理している *node.js* のパッケージは「 *~/AppData/Roaming/nvm/{nodeバージョン番号}/* 」に格納されている
 
+Mac
+=====================================================================
+1. *nvm* インストール
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  brew install nvm
+
+2. *profile* 追加
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  echo '' >> ~/.zshrc
+  echo '## nvm' >> ~/.zshrc
+  echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
+  echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"' >> ~/.zshrc
+  echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zshrc
+
 
 参考資料
 =====================================================================
