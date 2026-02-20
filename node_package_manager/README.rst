@@ -49,6 +49,49 @@ pnpm (Performat npm)
 .. note::
   * ``pnpm config list --location=global`` で結果を確認できる
 
+Mac
+=====================================================================
+pnpm (Performat npm)
+---------------------------------------------------------------------
+1. *pnpm* インストール
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: zsh
+
+  mise install pnpm
+  mise use --global pnpm@latest
+
+.. note::
+  * ``pnpm -v`` でバージョンが表示されればOKです
+
+2. *pnpm* でインストールするバイナリを保存するフォルダのセットアップ
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: zsh
+
+  pnpm setup
+
+3. ``npm`` / ``npx`` 抑止
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: zsh
+
+  echo "" >> ~/.zshrc
+  echo "## npm & npx stop" >> ~/.zshrc
+  echo "alias npm='echo \"WARNING: npm は実行しないでください\" && false'" >> ~/.zshrc
+  echo "alias npx='echo \"WARNING: npx は実行しないでください\" && false'" >> ~/.zshrc
+  source ~/.zshrc
+
+4. *minimumReleaseAge* 設定
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+* 公開されてから何日経過したパッケージのみインストールを許容するかを設定する項目
+* 値は分単位 (Ex. 1日 → 1440)
+* ``--location`` パラメータには ``global`` (環境全体) or ``project`` (プロジェクト毎) で指定可能
+
+.. code-block:: zsh
+
+  pnpm config set --location=global minimumReleaseAge 10080
+
+.. note::
+  * ``pnpm config list --location=global`` で結果を確認できる
+
 
 参考資料
 =====================================================================
