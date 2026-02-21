@@ -65,9 +65,9 @@ Mac
 
   pnpm install -g aws-cdk
 
-初期作業
+初期作業 - Typescript
 =====================================================================
-プロジェクト作成 (Typescript)
+プロジェクト作成
 ---------------------------------------------------------------------
 .. code-block:: zsh
 
@@ -82,4 +82,23 @@ Mac
 
   cdk init --language typescript --package-manager pnpm
 
+BootStrap
+---------------------------------------------------------------------
+.. code-block:: zsh
 
+  cdk bootstrap \
+  --toolkit-stack-name CustomCDKToolkit \
+  --bootstrap-bucket-name cdk-bootstrap-bucket \
+  --tags CdkToolKit=true 
+
+.. note::
+
+  * バケット名は、全世界で一意である必要があります
+  * 作成に失敗した場合は、バケット名を修正してください
+
+参考資料
+=====================================================================
+リファレンス
+---------------------------------------------------------------------
+* `AWS CDK で使用する環境をブートストラップする - AWS クラウド開発キット (AWS CDK) v2 デベロッパーガイド <https://docs.aws.amazon.com/ja_jp/cdk/v2/guide/bootstrapping-env.html>`_
+* `AWS CDK ブートストラップをカスタマイズする - AWS クラウド開発キット (AWS CDK) v2 デベロッパーガイド <https://docs.aws.amazon.com/ja_jp/cdk/v2/guide/bootstrapping-customizing.html>`_
