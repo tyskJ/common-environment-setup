@@ -64,3 +64,21 @@ Mac
 .. code-block:: zsh
 
   pnpm install -g aws-cdk
+
+初期作業
+=====================================================================
+プロジェクト作成
+---------------------------------------------------------------------
+.. code-block:: zsh
+
+  mkdir app && cd app
+
+.. note::
+
+  * フォルダ名は任意です
+  * 初期化した際に「 ``フォルダ名-stack.ts`` 」 でスタックファイルが、「 ``フォルダ名.ts`` 」でアプリケーションファイルが作成されます
+
+.. code-block:: zsh
+
+  cdk init --language typescript --package-manager pnpm
+
