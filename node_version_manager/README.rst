@@ -6,12 +6,12 @@ Node Version Manager インストール手順
 
 Windows
 =====================================================================
-1. *nvm-windows* ( Windows版 *Node.js* バージョンマネージャー)インストール
+1. ``nvm-windows`` ( Windows版 ``Node.js`` バージョンマネージャー)インストール
 ---------------------------------------------------------------------
 * `GitHub <https://github.com/coreybutler/nvm-windows>`_ から *nvm-setup.exe* をダウンロード
 * デフォルト設定でインストール
 
-2. *node.js* (LTS版) インストール
+2. ``node.js`` (LTS版) インストール
 ---------------------------------------------------------------------
 .. code-block:: bash
 
@@ -66,3 +66,4 @@ Mac
 ---------------------------------------------------------------------
 * `nvm-windowsでnode.jsのバージョン管理をする【Windows】 <https://qiita.com/nezumori/items/504b26d26f3e6e3009e3>`_
 * `[Node.js] nvmインストール手順(MacOS) - Zenn <https://zenn.dev/nok_c7/articles/536ac2d35bf9e6>`_
+
