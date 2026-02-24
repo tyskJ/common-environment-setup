@@ -56,6 +56,38 @@ Mac
 
   ``nvm -v`` でバージョンが表示されればOKです
 
+Linux
+=====================================================================
+1. ``nvm`` インストール
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+
+.. note::
+
+  バージョンは実行時の最新に合わせてください
+
+2. ``profile`` 追加
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  echo '' >> ~/.bashrc
+  echo '##nvm' >> ~/.bashrc
+  echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bashrc
+  echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> ~/.bashrc
+  echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >> ~/.bashrc
+
+3. ``profile`` 読み込み
+---------------------------------------------------------------------
+.. code-block:: bash
+
+  source ~/.bashrc
+
+.. note::
+
+  ``nvm -v`` でバージョンが表示されればOKです
+
 参考資料
 =====================================================================
 リファレンス
@@ -66,5 +98,6 @@ Mac
 ---------------------------------------------------------------------
 * `nvm-windowsでnode.jsのバージョン管理をする【Windows】 <https://qiita.com/nezumori/items/504b26d26f3e6e3009e3>`_
 * `[Node.js] nvmインストール手順(MacOS) - Zenn <https://zenn.dev/nok_c7/articles/536ac2d35bf9e6>`_
+
 
 
