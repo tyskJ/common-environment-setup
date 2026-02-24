@@ -28,7 +28,13 @@ pnpm (Performat npm)
 .. note::
   * ``pnpm -v`` でバージョンが表示されればOKです
 
-3. ``npm`` / ``npx`` 抑止
+3. *pnpm* でインストールするバイナリを保存するフォルダのセットアップ
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: bash
+
+  pnpm setup
+
+4. ``npm`` / ``npx`` 抑止
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
 
@@ -36,7 +42,7 @@ pnpm (Performat npm)
   echo "alias npx='echo \"WARNING: npx は実行しないでください\" && false'" >> ~/.bashrc
   source ~/.bashrc
 
-4. *minimumReleaseAge* 設定
+5. *minimumReleaseAge* 設定
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * 公開されてから何日経過したパッケージのみインストールを許容するかを設定する項目
 * 値は分単位 (Ex. 1日 → 1440)
@@ -111,4 +117,5 @@ pnpm (Performat npm)
 * `npm から pnpm に移行する取り組み - Zenn <https://zenn.dev/korosuke613/scraps/936cce981d0209>`_
 * `AWS CodeBuildを使ってビルドしているサイトのNodeパッケージマネージャーをnpmからpnpmに切り替えてみた - DevelopersIO <https://dev.classmethod.jp/articles/how-to-change-npm-to-pnpm-with-codebuild-configurations/>`_
 * `pnpmのminimumReleaseAgeをグローバルとプロジェクトそれぞれに設定する方法 - Zenn <https://zenn.dev/takumin0423/articles/77b9b3b55bf1f9>`_
+
 
