@@ -63,6 +63,9 @@ pnpm (Performat npm)
 .. note::
   * ``pnpm -v`` でバージョンが表示されればOKです
 
+.. note::
+  * ``brew`` でもインストール可能
+
 2. *pnpm* でインストールするバイナリを保存するフォルダのセットアップ
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: zsh
@@ -108,3 +111,4 @@ pnpm (Performat npm)
 * `npm から pnpm に移行する取り組み - Zenn <https://zenn.dev/korosuke613/scraps/936cce981d0209>`_
 * `AWS CodeBuildを使ってビルドしているサイトのNodeパッケージマネージャーをnpmからpnpmに切り替えてみた - DevelopersIO <https://dev.classmethod.jp/articles/how-to-change-npm-to-pnpm-with-codebuild-configurations/>`_
 * `pnpmのminimumReleaseAgeをグローバルとプロジェクトそれぞれに設定する方法 - Zenn <https://zenn.dev/takumin0423/articles/77b9b3b55bf1f9>`_
+
