@@ -25,18 +25,18 @@ Windows
 
 .. note::
 
-  * バージョン `nvm list` でインストール済みの値を指定
-  * *nvm* で管理している *node.js* のパッケージは「 *~/AppData/Roaming/nvm/{nodeバージョン番号}/* 」に格納されている
+  * バージョン ``nvm list`` でインストール済みの値を指定
+  * ``nvm`` で管理している ``node.js`` のパッケージは「 ``~/AppData/Roaming/nvm/{nodeバージョン番号}/`` 」に格納されている
 
 Mac
 =====================================================================
-1. *nvm* インストール
+1. ``nvm`` インストール
 ---------------------------------------------------------------------
 .. code-block:: zsh
 
   brew install nvm
 
-2. *profile* 追加
+2. ``profile`` 追加
 ---------------------------------------------------------------------
 .. code-block:: zsh
 
@@ -46,7 +46,7 @@ Mac
   echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"' >> ~/.zshrc
   echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zshrc
 
-3. *profile* 読み込み
+3. ``profile`` 読み込み
 ---------------------------------------------------------------------
 .. code-block:: zsh
 
@@ -54,7 +54,7 @@ Mac
 
 .. note::
 
-  *nvm -v* でバージョンが表示されればOKです
+  ``nvm -v`` でバージョンが表示されればOKです
 
 参考資料
 =====================================================================
@@ -66,4 +66,5 @@ Mac
 ---------------------------------------------------------------------
 * `nvm-windowsでnode.jsのバージョン管理をする【Windows】 <https://qiita.com/nezumori/items/504b26d26f3e6e3009e3>`_
 * `[Node.js] nvmインストール手順(MacOS) - Zenn <https://zenn.dev/nok_c7/articles/536ac2d35bf9e6>`_
+
 
