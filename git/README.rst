@@ -47,6 +47,7 @@ Recommend
   git config --global rebase.autosquash true    # リベース時にfixupやsquashの指定されたコミットを自動でsquashする
   git config --global pull.rebase true          # pull時にマージの代わりにリベースを実行して履歴をシンプルにする
   git config --global rerere.enabled true       # コンフリクト解消結果を記録し、再発した際に自動で適用する
+  git config --global core.quotepath false      # 日本語ファイル名文字化け防止
 
 Alias
 ---------------------------------------------------------------------
