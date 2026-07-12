@@ -30,6 +30,7 @@ Mac
 =====================================================================
 リファレンス
 ---------------------------------------------------------------------
+* `Claude Support <https://support.claude.com/ja/>`_
 * `Claude Code Docs <https://code.claude.com/docs/ja/overview>`_
 
 ブログ
