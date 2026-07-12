@@ -38,3 +38,4 @@ Mac
 * `Claudeの違いがわからない人へ｜Claude / Cowork / Code 完全使い分けガイド【2026年版】- note <https://note.com/nobel/n/n6336ac1ca06d>`_
 * `【保存版】Claude Codeはどこで使うのが正解？ CLI / Desktop / VSCode / Slack / Web の5環境＋Coworkを徹底比較してみた - Qiita <https://qiita.com/rf_p/items/27285d6a6ebc051ddffc>`_
 * `Claude が新しくなった。モデル・工数・思考モードの選び方 <https://ccwm.substack.com/p/claude-model-effort-adaptive-thinking-guide>`_
+* `Claude Codeをバージョン指定でインストールする <https://www.chazine.com/archives/4679#google_vignette>`_
