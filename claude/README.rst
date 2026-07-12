@@ -22,6 +22,10 @@ Mac
 
   curl -fsSL https://claude.ai/install.sh | bash
 
+.. code-block:: bash
+
+  echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+
 .. note::
   * ``claude --version`` でバージョンが表示されればOKです
 
