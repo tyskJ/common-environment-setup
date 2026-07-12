@@ -18,7 +18,7 @@ Claude Code
 
 Mac
 ---------------------------------------------------------------------
-.. code-block::
+.. code-block:: bash
 
   curl -fsSL https://claude.ai/install.sh | bash
 
