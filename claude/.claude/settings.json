@@ -1,3 +1,4 @@
 {
-  "language": "japanese"
+  "language": "japanese",
+  "model": "sonnet"
 }
