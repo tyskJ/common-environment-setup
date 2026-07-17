@@ -33,16 +33,24 @@ Windows
 ---------------------------------------------------------------------
 
 .. note::
-  * Claude Code Docs に記載の通り、Windows 環境では ``Git for Windows`` のインストールが推奨されています
+  * Windows 環境では ``Git for Windows`` のインストールが推奨されています
   * そのため、 `こちら <../git/README.rst>`_ を参考にインストールしてください
-
-    | Git for Windows is recommended on native Windows so Claude Code can use the Bash tool.
-    | If Git for Windows is not installed, Claude Code uses PowerShell as the shell tool instead.
-    | WSL setups do not need Git for Windows.
 
 .. code-block:: powershell
 
   irm https://claude.ai/install.ps1 | iex
+
+.. code-block:: powershell
+
+  [System.Environment]::SetEnvironmentVariable(
+    "CLAUDE_CODE_GIT_BASH_PATH",
+    "C:\Program Files\Git\bin\bash.exe",
+    "User"
+  )
+
+.. code-block:: powershell
+
+  
 
 
 
