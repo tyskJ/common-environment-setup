@@ -50,7 +50,7 @@ Windows
 
 .. code-block:: powershell
 
-  $addPath = '%USERPROFILE%\.local\bin'
+  $addPath = '$HOME\.local\bin'
   $userPath = [System.Environment]::GetEnvironmentVariable('Path', 'User')
   
   if (($userPath -split ';') -notcontains $addPath) {
