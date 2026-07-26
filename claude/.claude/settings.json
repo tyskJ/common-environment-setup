@@ -1,4 +1,11 @@
 {
+  "autoUpdatesChannel": "stable",
   "language": "japanese",
-  "model": "sonnet"
+  "cleanupPeriodDays": 14,
+  "showTurnDuration": true,
+  "spinnerTipsEnabled": false,
+  "model": "sonnet",
+  "env": {
+    "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1"
+  }
 }
