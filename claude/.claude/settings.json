@@ -6,6 +6,8 @@
   "spinnerTipsEnabled": false,
   "model": "sonnet",
   "env": {
-    "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1"
+    "DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1",
+    "EDITOR": "code --wait",
+    "VISUAL": "code --wait"
   }
 }
