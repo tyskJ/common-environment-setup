@@ -1,0 +1,30 @@
+![](./doc/001samune.png)
+
+# GnuPG インストール手順
+
+## Windows
+
+> [!NOTE]
+> - Git for WindowsではGnuPGが同梱されているため、追加インストール不要
+
+### 1. *GnuPG* バイナリデータダウンロード
+
+- [GnuPG](https://gnupg.org/download/index.html) からWindows版バイナリ( *gpg4win-4.4.0.exe* )をダウンロード
+
+> [!NOTE]
+> - ダウンロード時に寄付を求められますが、しなくても大丈夫です。(してもOKです。)
+> - 寄付しない場合は *$0* をクリックし、「 *Donate & Download* 」をクリックします。
+
+### 2. インストーラ実行
+
+- *gpg4win-4.4.0.exe* をダブルクリックし、インストーラを実行
+
+> [!NOTE]
+> - デフォルト設定で問題ありません。
+
+## 参考資料
+
+### ブログ
+
+- [【Windows】GnuPG(GPG)インストール方法:(2022年版)](https://www.ochappa.net/posts/gpg-win-setup)
+- [macOS / Windows の Git 用に GnuPG (GPG) を準備する](https://qiita.com/watagashi/items/9425599678f6f93a0910)
