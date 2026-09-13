@@ -54,6 +54,10 @@
 
 * [こちら](./node_version_manager)
 
+## Obsidian
+
+* [こちら](./obsidian)
+
 ## OCI CLI
 
 * [こちら](./ocicli)
