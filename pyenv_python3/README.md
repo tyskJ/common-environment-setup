@@ -1,6 +1,6 @@
 ![](./doc/001samune.png)
 
-# Python インストール手順
+# pyenv インストール手順
 
 ## Windows (Git for Windows)
 
@@ -97,21 +97,26 @@ pyenv global 3.13.0
 > - Git Bash (Git for Windows) を前提としたコマンドです
 
 ```bash
-PYTHONUTF8=1
-export PYTHONUTF8
+echo 'export PYTHONUTF8=1' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 > [!NOTE]
-> - AWS CLIは *Python3* を内部的に使用
-> - Windowsの文字コードは *cp932(Shift_JIS)* を使用
-> - `aws cloudformation package` 実行時のyamlファイル出力時に、 *cp932* に伴うエラーが発生
-> - *Python3* がファイルを出力する際の文字コードを環境変数にて *UTF-8* に指定
+> - Windows 上の *Python3* は、ファイル読み書き時の既定の文字コードに *cp932(Shift_JIS)* を使用します
+> - そのため、 *Python* 製のツールやスクリプト全般で以下のような問題が発生し得ます
+>   - 日本語を含む UTF-8 のファイル (YAML / JSON / Markdown 等) 読み込み時の `UnicodeDecodeError: 'cp932' codec can't decode ...`
+>   - パイプやリダイレクト ( `> out.txt` / `| jq` 等) で出力した際の文字化け
+>   - `pip install` 時のパッケージビルドエラー
+> - 例えば *AWS CLI* では、 `aws cloudformation package` 実行時の yaml ファイル出力でエラーが発生します
+> - 環境変数 `PYTHONUTF8=1` で *UTF-8 モード* を有効化し、 *Python3* の既定の文字コードを *UTF-8* にします
+> - *Python3.15* 以降は *UTF-8 モード* が既定で有効になる予定です ( *PEP 686* )
 
 ## 参考資料
 
 ### リファレンス
 
 - [pyenv - GitHub](https://github.com/pyenv/pyenv)
+- [PEP 686 – Make UTF-8 mode default](https://peps.python.org/pep-0686/)
 
 ### ブログ
 
