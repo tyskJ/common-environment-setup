@@ -148,6 +148,27 @@ EOF
 > [!WARNING]
 > - 既に `uv.toml` がある場合は上書きされるため、追記してください
 
+## パッケージ / ツールのインストール
+
+- *uv* でインストールした *Python* は *uv* の管理下にあるため、 `pip install` によるインストールは拒否されます
+- また、 `pip` 経由では `exclude-newer` 設定が適用されないため、 *pip* ではなく *uv* のコマンドを使用してください
+
+| 用途 | コマンド |
+| --- | --- |
+| CLI ツールのインストール | `uv tool install <package>` |
+| CLI ツールのアップデート | `uv tool upgrade <package>` |
+| CLI ツールのアンインストール | `uv tool uninstall <package>` |
+| 仮想環境の作成 | `uv venv` |
+| 仮想環境へのパッケージインストール | `uv pip install <package>` |
+| プロジェクトへの依存パッケージ追加 | `uv add <package>` |
+
+> [!NOTE]
+> - `uv tool install` はツールごとに専用の仮想環境を作成し、コマンドを `~/.local/bin` に配置します
+> - `uv tool list` でインストール済みツールの一覧を確認できます
+
+> [!TIP]
+> - 仮想環境内で `pip` 自体を使いたい場合は `uv venv --seed` で作成すると *pip* も同梱されます
+
 # Pythonエラー解消
 
 ## Windows UTF-8問題
@@ -179,4 +200,5 @@ source ~/.bashrc
 - [Installation - uv](https://docs.astral.sh/uv/getting-started/installation/)
 - [Installing Python - uv](https://docs.astral.sh/uv/guides/install-python/)
 - [Settings - uv](https://docs.astral.sh/uv/reference/settings/)
+- [Using tools - uv](https://docs.astral.sh/uv/guides/tools/)
 - [PEP 686 – Make UTF-8 mode default](https://peps.python.org/pep-0686/)

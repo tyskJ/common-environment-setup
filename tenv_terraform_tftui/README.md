@@ -125,11 +125,22 @@ tenv tf use v1.10.3
 
 ### 1. *tftui* インストール
 
-- [GitHub](https://github.com/idoavrah/terraform-tui/tree/main) から *pip* でインストール
+- [GitHub](https://github.com/idoavrah/terraform-tui/tree/main) のパッケージを *uv* でインストール
 
 ```bash
-pip install tftui
+uv tool install tftui
 ```
+
+> [!NOTE]
+> - *uv* のセットアップは [こちら](../uv_python3/README.md) を参照
+> - `uv tool list` に *tftui* が表示されればOKです
+
+> [!TIP]
+> - *pyenv* や *PIM* で *Python* をインストールしている場合は、 *pip* でもインストール可能です
+>
+> ```bash
+> pip install tftui
+> ```
 
 ## Mac
 
