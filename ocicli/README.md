@@ -66,6 +66,9 @@ mise use --global oci@latest
 > - *mise* のセットアップは [こちら](../mise-en-place/README.md) を参照
 > - *oci -v* でバージョンが表示されれば OK です
 
+> [!TIP]
+> - `brew` でもインストール可能 ( `brew install oci-cli` )
+
 ## Linux
 
 ### 1. *OCI CLI* インストール

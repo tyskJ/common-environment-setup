@@ -34,6 +34,10 @@ mise use --global aws@latest
 > [!NOTE]
 > - *mise* のセットアップは [こちら](../mise-en-place/README.md) を参照
 
+> [!TIP]
+> - `brew` でもインストール可能 ( `brew install awscli` )
+> - その場合、手順 2 は不要です
+
 ### 2. `symlink_bins` 設定
 
 - `~/.config/mise/config.toml` の `[tools]` に追加された *aws* の行を以下に修正
