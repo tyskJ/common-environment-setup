@@ -3,12 +3,16 @@
 # Node Package Manager インストール手順
 
 > [!NOTE]
+> - *Node.js* のパッケージ(ライブラリ)を管理するツール
 > - `npm` は `node` をインストールするとデフォルトでインストールされるため割愛
 > - お好みのパッケージマネージャーを選択してください
 
-## Windows (Git for Windows)
+## pnpm (Performant npm)
 
-### pnpm (Performat npm)
+> [!NOTE]
+> - `minimumReleaseAge` で公開直後のパッケージを除外でき、サプライチェーン攻撃対策になるため *npm* / *npx* の代わりに使用
+
+### Windows (Git for Windows)
 
 #### 1. `pnpm` インストール
 
@@ -53,9 +57,7 @@ pnpm config set --location=global minimumReleaseAge 10080
 > [!NOTE]
 > - `pnpm config list --location=global` で結果を確認できる
 
-## Mac
-
-### pnpm (Performat npm)
+### Mac
 
 #### 1. `pnpm` インストール
 
@@ -99,9 +101,7 @@ pnpm config set --location=global minimumReleaseAge 10080
 > [!NOTE]
 > - `pnpm config list --location=global` で結果を確認できる
 
-## Linux
-
-### pnpm (Performat npm)
+### Linux
 
 #### 1. `pnpm` インストール
 
