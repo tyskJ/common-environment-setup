@@ -21,20 +21,6 @@
 > - Claude Code の利用には、`Pro プラン` 以上の登録が必要です
 > - [こちら](https://claude.ai) から Claude にサインアップ後、登録をしてください
 
-### Mac
-
-```bash
-curl -fsSL https://claude.ai/install.sh | bash
-```
-
-```bash
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
-```
-
-> [!NOTE]
->
-> - `claude --version` でバージョンが表示されればOKです
-
 ### Windows
 
 > [!NOTE]
@@ -42,9 +28,13 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 > - Windows 環境では `Git for Windows` のインストールが推奨されています
 > - そのため、 [こちら](../git/README.md) を参考にインストールしてください
 
+#### 1. *Claude Code* インストール
+
 ```powershell
 irm https://claude.ai/install.ps1 | iex
 ```
+
+#### 2. *Git Bash* のパスを環境変数に設定
 
 ```powershell
 [System.Environment]::SetEnvironmentVariable(
@@ -53,6 +43,8 @@ irm https://claude.ai/install.ps1 | iex
   "User"
 )
 ```
+
+#### 3. ディレクトリにPATHを通す
 
 ```powershell
 $addPath = "$HOME\.local\bin"
@@ -71,12 +63,56 @@ if (($userPath -split ';') -notcontains $addPath) {
 >
 > - Powershell を再起動し、 `claude --version` でバージョンが表示されればOKです
 
+### Mac
+
+#### 1. *Claude Code* インストール
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+#### 2. ディレクトリにPATHを通す
+
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
+```
+
+> [!NOTE]
+>
+> - `claude --version` でバージョンが表示されればOKです
+
+## Claude Desktop
+
+### Windows
+
+#### 1. インストーラダウンロード
+
+[Claude ダウンロードページ](https://claude.com/download) からインストーラをダウンロード
+
+#### 2. インストーラ実行
+
+- インストーラを実行します。※基本デフォルトで問題ありません。
+- インストール完了後、`Claude` が起動できればOKです
+
+### Mac
+
+#### 1. *Claude Desktop* インストール
+
+```zsh
+brew install --cask claude
+```
+
+> [!NOTE]
+>
+> - `Applications` フォルダから `Claude` が起動できればOKです
+
 ## 参考資料
 
 ### リファレンス
 
 - [Claude Support](https://support.claude.com/ja/)
 - [Claude Code Docs](https://code.claude.com/docs/ja/overview)
+- [Claude ダウンロード](https://claude.com/download)
 
 ### ブログ
 

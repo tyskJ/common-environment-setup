@@ -40,6 +40,7 @@ brew install nvm
 ### 2. `profile` 追加
 
 ```zsh
+mkdir -p ~/.nvm
 echo '' >> ~/.zshrc
 echo '## nvm' >> ~/.zshrc
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
@@ -55,6 +56,16 @@ source ~/.zshrc
 
 > [!NOTE]
 > `nvm -v` でバージョンが表示されればOKです
+
+### 4. `node.js` (LTS版) インストール
+
+```zsh
+nvm install --lts
+nvm use --lts
+```
+
+> [!NOTE]
+> - `node -v` でバージョンが表示されればOKです
 
 ## Linux
 
@@ -85,6 +96,16 @@ source ~/.bashrc
 
 > [!NOTE]
 > `nvm -v` でバージョンが表示されればOKです
+
+### 4. `node.js` (LTS版) インストール
+
+```bash
+nvm install --lts
+nvm use --lts
+```
+
+> [!NOTE]
+> - `node -v` でバージョンが表示されればOKです
 
 ## 参考資料
 

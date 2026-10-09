@@ -13,3 +13,13 @@
 ```zsh
 brew install --cask postman
 ```
+
+> [!NOTE]
+> - `Applications` フォルダから `Postman` が起動できればOKです
+
+## 参考資料
+
+### リファレンス
+
+- [Download Postman](https://www.postman.com/downloads/)
+- [Homebrew Formulae - postman](https://formulae.brew.sh/cask/postman)

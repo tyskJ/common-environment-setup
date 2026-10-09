@@ -6,15 +6,6 @@
 > - GitHub をコマンドラインから操作する公式 CLI ( `gh` コマンド)
 > - プルリクエストや Issue の作成・確認を、ブラウザを開かずに行うために使用
 
-## Mac
-
-```bash
-brew install gh
-```
-
-> [!NOTE]
-> - `gh --version` でバージョンが表示されればOKです
-
 ## Windows
 
 ### 1. インストーラダウンロード
@@ -29,6 +20,17 @@ brew install gh
 ```bash
 gh --version
 ```
+
+## Mac
+
+### 1. *gh* インストール
+
+```bash
+brew install gh
+```
+
+> [!NOTE]
+> - `gh --version` でバージョンが表示されればOKです
 
 ## 参考資料
 

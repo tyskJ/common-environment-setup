@@ -67,6 +67,9 @@ mise use --global pnpm@latest
 ```
 
 > [!NOTE]
+> - *mise* のセットアップは [こちら](../mise-en-place/README.md) を参照
+
+> [!NOTE]
 > - `pnpm -v` でバージョンが表示されればOKです
 
 > [!TIP]
@@ -114,7 +117,7 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 ```bash
 echo '' >> ~/.bashrc
 echo '##pnpm' >> ~/.bashrc
-echo 'export PNPM_HOME="~/.local/share/pnpm"' >> ~/.bashrc
+echo 'export PNPM_HOME="$HOME/.local/share/pnpm"' >> ~/.bashrc
 echo 'case ":$PATH:" in' >> ~/.bashrc
 echo '  *":$PNPM_HOME:"*) ;;' >> ~/.bashrc
 echo '  *) export PATH="$PNPM_HOME:$PATH" ;;' >> ~/.bashrc

@@ -1,6 +1,6 @@
 ![](./doc/001samune.png)
 
-# Terraform インストール手順
+# tenv / Terraform / TFTUI インストール手順
 
 > [!NOTE]
 > - *Terraform* は HashiCorp が提供する、コードでインフラを定義・構築する IaC ツール
@@ -41,7 +41,7 @@ sed -i '$aexport PATH=$PATH:$HOME/tofuutils/tenv/' ~/.bashrc
 tenv tf install latest # ~/.tenv/Terraform/バージョン番号/に保存される
 ```
 
-### 5. *v.1.10.3* を使用
+### 5. 使用するバージョンの指定
 
 ```bash
 tenv tf list # インストールしたバージョンを確認
@@ -66,7 +66,7 @@ brew install tenv
 tenv tf install latest # ~/.tenv/Terraform/バージョン番号/に保存される
 ```
 
-### 3. *v.1.14.1* を使用
+### 3. 使用するバージョンの指定
 
 ```bash
 tenv tf list # インストールしたバージョンを確認
@@ -80,6 +80,9 @@ tenv tf use v1.14.1
 ## Linux
 
 ### 1. *cosign(v.2.0+)* インストール
+
+> [!NOTE]
+> - 最新バージョンの取得に *jq* を使用するため、未インストールの場合は事前に `sudo dnf install -y jq` を実行してください
 
 ```bash
 cd
@@ -106,7 +109,7 @@ sudo dnf install tenv -y
 tenv tf install latest # ~/.tenv/Terraform/バージョン番号/に保存される
 ```
 
-### 5. *v.1.10.3* を使用
+### 5. 使用するバージョンの指定
 
 ```bash
 tenv tf list # インストールしたバージョンを確認
@@ -117,18 +120,18 @@ tenv tf use v1.10.3
 > - バージョンはインストールした値に修正してください
 > - *terraform -v* でバージョンが表示されればOKです
 
-# Terraform 共通設定
+## Terraform 共通設定
 
-## gitignore
+### gitignore
 
 - [gitignore.io](https://www.toptal.com/developers/gitignore) にて *terraform* と入力し *.gitignore* を作成
 - terraformコードを格納するフォルダに保存
 
-# Terraform TUI
+## Terraform TUI
 
-## Windows
+### Windows
 
-### 1. *tftui* インストール
+#### 1. *tftui* インストール
 
 - [GitHub](https://github.com/idoavrah/terraform-tui/tree/main) のパッケージを *uv* でインストール
 
@@ -141,15 +144,15 @@ uv tool install tftui
 > - `uv tool list` に *tftui* が表示されればOKです
 
 > [!TIP]
-> - *pyenv* や *PIM* で *Python* をインストールしている場合は、 *pip* でもインストール可能です
+> - *pyenv* ( [こちら](../pyenv_python3/README.md) ) や *PIM* ( [こちら](../pim/README.md) ) で *Python* をインストールしている場合は、 *pip* でもインストール可能です
 >
 > ```bash
 > pip install tftui
 > ```
 
-## Mac
+### Mac
 
-### 1. *tftui* インストール
+#### 1. *tftui* インストール
 
 ```zsh
 brew install idoavrah/homebrew/tftui

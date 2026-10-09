@@ -5,13 +5,14 @@
 > [!NOTE]
 > - TypeScript などのプログラミング言語で AWS リソースを定義し、 *CloudFormation* 経由でデプロイする IaC フレームワーク
 > - コードの再利用や型補完を活かして、AWS インフラを構築するために使用
+> - 事前に *Node.js* ( [こちら](../node_version_manager/README.md) ) と *pnpm* ( [こちら](../node_package_manager/README.md) ) をセットアップしてください
 
 ## Windows (Git for Windows)
 
 ### 1. *Typescript* のグローバルインストール
 
 ```bash
-npm install -g typescript
+pnpm install -g typescript
 ```
 
 > [!TIP]
@@ -29,25 +30,19 @@ npm install -g typescript
 >
 > ```bash
 > # shell
-> export NODE_EXTRA_CA_CERTS=/path/to/certificate.pem # 証明書の絶対パスを指定
+> export NODE_EXTRA_CA_CERTS=/c/path/to/certificate.pem # 証明書の絶対パスを指定
 > touch ~/.bashrc # .bashrcがない場合実行
-> sed -i '$aexport NODE_EXTRA_CA_CERTS=/path/to/certificate.pem' ~/.bashrc
-> ```
->
-> ```powershell
-> # powershell
-> $env:NODE_EXTRA_CA_CERTS="C:\path\to\certificate.pem"
+> sed -i '$aexport NODE_EXTRA_CA_CERTS=/c/path/to/certificate.pem' ~/.bashrc
 > ```
 
 ### 2. *aws-cdk* のグローバルインストール
 
 ```bash
-npm install -g aws-cdk
+pnpm install -g aws-cdk
 ```
 
 > [!NOTE]
-> - *npm* によってグローバルインストールしたパッケージは「 *~/AppData/Roaming/nvm/{nodeバージョン番号}/node_modules/* 」に格納されている
-> - グローバルパッケージは *node* のバージョン毎に管理されているため、 *node* のバージョンを切り替えた際は再度グローバルパッケージをインストールする必要がある
+> - `cdk --version` でバージョンが表示されればOKです
 
 ## Mac
 

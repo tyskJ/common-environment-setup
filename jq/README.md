@@ -1,6 +1,6 @@
 ![](./doc/001samune.png)
 
-# jq(JSONコマンドライン処理ツール) インストール手順
+# jq インストール手順
 
 > [!NOTE]
 > - JSON をコマンドラインで整形・抽出・加工するツール
@@ -16,17 +16,29 @@
 curl -o ~/Downloads/#1 -OL https://github.com/jqlang/jq/releases/download/jq-1.7.1/{jq-windows-amd64.exe}
 ```
 
-### 2. バイナリデータを任意のフォルダに解凍
+> [!NOTE]
+> - バージョンは実行時の最新に合わせてください
+
+### 2. バイナリを任意のフォルダに配置
 
 ```bash
-mkdir ~/jq
-mv ~/Downloads/jq-windows-amd64.exe ~/jq
+mkdir -p ~/jq
+mv ~/Downloads/jq-windows-amd64.exe ~/jq/jq.exe
 ```
 
 ### 3. ディレクトリにPATHを通す
 
 ```bash
 echo 'export PATH=$PATH:$HOME/jq' >> ~/.bashrc
-echo 'alias jq='jq-windows-amd64.exe'' >> ~/.bashrc
 source ~/.bashrc
 ```
+
+> [!NOTE]
+> - `jq --version` でバージョンが表示されればOKです
+
+## 参考資料
+
+### リファレンス
+
+- [jqlang/jq - GitHub](https://github.com/jqlang/jq)
+- [jq Manual](https://jqlang.org/manual/)

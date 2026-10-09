@@ -1,12 +1,14 @@
 ![](./doc/001samune.png)
 
-# Python Install Manager インストール手順 - Windows Only -
+# Python Install Manager インストール手順
 
 > [!NOTE]
 > - python.org が提供する Windows 向けの公式 *Python* インストーラー兼バージョン管理ツール ( `py` コマンド)
 > - Windows で、公式の方法により *Python* の複数バージョンを管理するために使用
 
-## 1. *pim* インストール
+## Windows
+
+### 1. *pim* インストール
 
 - [公式](https://www.python.org/downloads/windows/) より最新のインストーラー (`MSI package`) をダウンロード
 - `msi` ファイルを実行してインストール
@@ -14,7 +16,7 @@
 > [!NOTE]
 > - ターミナルで `py list` が実行できればOKです
 
-## 2. *python3* インストール - 最新版 -
+### 2. *python3* インストール - 最新版 -
 
 ```powershell
 py install 3
@@ -23,7 +25,7 @@ py install 3
 > [!NOTE]
 > - `python3 --version` でバージョンが表示されればOKです
 
-## 3. *pip3* への `PATH` を通す
+### 3. *pip3* への `PATH` を通す
 
 - 下記コマンドを実行し、グローバルショートカット用ディレクトリを取得
 

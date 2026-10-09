@@ -174,11 +174,11 @@ EOF
 > [!TIP]
 > - 仮想環境内で `pip` 自体を使いたい場合は `uv venv --seed` で作成すると *pip* も同梱されます
 
-# Pythonエラー解消
+## Pythonエラー解消
 
-## Windows UTF-8問題
+### Windows UTF-8問題
 
-### Python3の文字エンコーディング設定を *UTF-8* に変更
+#### Python3の文字エンコーディング設定を *UTF-8* に変更
 
 > [!NOTE]
 > - Git Bash (Git for Windows) を前提としたコマンドです

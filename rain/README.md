@@ -1,6 +1,6 @@
 ![](./doc/001samune.png)
 
-# rain(CloudFormation CLI実行ツール) インストール手順
+# rain インストール手順
 
 > [!NOTE]
 > - AWS が開発している *CloudFormation* 用の CLI
@@ -10,7 +10,7 @@
 
 ### 1. *rain* リソースバイナリダウンロード
 
-- [GitHub release page](https://github.com/aws-cloudformation/rain/releases) から64bit版バイナリ( *rain-v1.21.0_windows-amd64.zip* )をダウンロード
+- [GitHub release page](https://github.com/aws-cloudformation/rain/releases) から64bit版バイナリ( *rain-v1.20.2_windows-amd64.zip* )をダウンロード
 
 ```bash
 RAIN_V=v1.20.2
@@ -28,7 +28,7 @@ rm -f ~/Downloads/rain-${RAIN_V}_windows-amd64.zip
 
 ```bash
 touch ~/.bashrc # .bashrcがない場合実行
-sed -i '$aexport Rain_v=v1.20.2' ~/.bashrc
+sed -i '$aexport RAIN_V=v1.20.2' ~/.bashrc
 sed -i '$aexport PATH=$PATH:$HOME/rain-${RAIN_V}_windows-amd64' ~/.bashrc
 source ~/.bashrc
 ```
@@ -58,6 +58,16 @@ curl -OL https://github.com/aws-cloudformation/rain/releases/download/${RAIN_V}/
 unzip rain-${RAIN_V}_linux-amd64.zip
 mkdir -p ~/bin; mv rain-${RAIN_V}_linux-amd64/rain ~/bin/; rm -rf rain*
 ```
+
+### 3. ディレクトリにPATHを通す
+
+```bash
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+> [!NOTE]
+> - `rain --version` でバージョンが表示されればOKです
 
 ## 参考資料
 

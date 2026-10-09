@@ -9,7 +9,8 @@
 ## Windows
 
 > [!NOTE]
-> - Git for WindowsではGnuPGが同梱されているため、追加インストール不要
+> - *Git for Windows* には *GnuPG* が同梱されているため、 *Git Bash* 上で利用するだけであれば本手順は不要です ( *Git for Windows* のインストールは [こちら](../git/README.md) )
+> - *Git Bash* 以外 ( PowerShell や GUI の鍵管理ツール *Kleopatra* 等) でも利用したい場合は、以下の手順で *Gpg4win* をインストールしてください
 
 ### 1. *GnuPG* バイナリデータダウンロード
 

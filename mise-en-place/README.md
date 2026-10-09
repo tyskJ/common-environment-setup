@@ -20,11 +20,11 @@ winget install jdx.mise
 
 ### 2. Activate
 
-- *mise activate* メソッド （ `mise x|exec` or `mise r|run` ） を毎度指定して *mise* コンテキスト(インストールしたツールや環境変数)をロードする方法があります
+- `mise x|exec` や `mise r|run` を毎度指定して *mise* コンテキスト(インストールしたツールや環境変数)をロードする方法があります
 - ただし今回は **Shims** を使います
 
 ```bash
-echo 'PATH=$PATH:$HOME/AppData/Local/mise/shims' >> ~/.bashrc
+echo 'export PATH="$HOME/AppData/Local/mise/shims:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -41,8 +41,8 @@ brew install mise
 
 ### 2. Activate
 
-- *mise activate* メソッド （ `mise x|exec` or `mise r|run` ） を毎度指定して *mise* コンテキスト(インストールしたツールや環境変数)をロードする方法があります
-- ただし今回は **Shims** を使います
+- `mise x|exec` や `mise r|run` を毎度指定して *mise* コンテキスト(インストールしたツールや環境変数)をロードする方法があります
+- ただし今回は `mise activate` を使い、シェル起動時に自動でロードします
 
 ```zsh
 echo -e "## mise" >> ~/.zshrc
@@ -64,8 +64,8 @@ curl https://mise.run | sh
 
 ### 2. Activate
 
-- *mise activate* メソッド （ `mise x|exec` or `mise r|run` ） を毎度指定して *mise* コンテキスト(インストールしたツールや環境変数)をロードする方法があります
-- ただし今回は **Shims** を使います
+- `mise x|exec` や `mise r|run` を毎度指定して *mise* コンテキスト(インストールしたツールや環境変数)をロードする方法があります
+- ただし今回は `mise activate` を使い、シェル起動時に自動でロードします
 
 ```bash
 echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc

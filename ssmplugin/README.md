@@ -39,7 +39,7 @@ curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac_arm64
 
 ```zsh
 sudo installer -pkg session-manager-plugin.pkg -target /
-sudo mkdir /usr/local/bin
+sudo mkdir -p /usr/local/bin
 sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local/bin/session-manager-plugin
 ```
 

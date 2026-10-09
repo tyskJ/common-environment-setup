@@ -79,7 +79,7 @@ source ~/.bashrc
 > [!NOTE]
 > - *oci -v* でバージョンが表示されれば OK です
 
-# 初回のみ実施
+## 初回のみ実施
 
 > [!WARNING]
 > - 本来なら、後述する *.oci* フォルダ及び *config* ファイルは事前に作成する必要はありません
@@ -88,13 +88,13 @@ source ~/.bashrc
 > - ただし、その場合だと `--profile` オプションを指定しても `[DEFAULT]` として登録されてしまい、意図しない操作になる可能性が高くなります
 > - 事前に *config* ファイルを作成し、空の `[DEFAULT]` を作成することで誤操作を低減させます
 
-## *.oci* フォルダ作成
+### *.oci* フォルダ作成
 
 ```bash
 mkdir -p $HOME/.oci
 ```
 
-## *config* ファイル作成
+### *config* ファイル作成
 
 ```bash
 cat <<EOF > $HOME/.oci/config

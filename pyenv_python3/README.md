@@ -15,7 +15,7 @@
 - [GitHub](https://github.com/pyenv-win/pyenv-win/blob/master/README.md#installation) からcloneする
 
 ```bash
-git clone https://github.com/pyenv-win/pyenv-win.git "$HOME\.pyenv"
+git clone https://github.com/pyenv-win/pyenv-win.git "$HOME/.pyenv"
 ```
 
 ### 2. ディレクトリにPATHを通す
@@ -71,6 +71,7 @@ curl -fsSL https://pyenv.run | bash
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ### 4. *python3.13* インストール
@@ -92,11 +93,11 @@ pyenv global 3.13.0
 > [!NOTE]
 > - `python -V` でバージョンが表示されればOKです
 
-# Pythonエラー解消
+## Pythonエラー解消
 
-## Windows UTF-8問題
+### Windows UTF-8問題
 
-### Python3の文字エンコーディング設定を *UTF-8* に変更
+#### Python3の文字エンコーディング設定を *UTF-8* に変更
 
 > [!NOTE]
 > - Git Bash (Git for Windows) を前提としたコマンドです
