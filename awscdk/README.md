@@ -10,7 +10,7 @@
 npm install -g typescript
 ```
 
-> [!NOTE]
+> [!TIP]
 > - 以下のようなエラーが出た場合
 >
 > ```bash

@@ -11,7 +11,7 @@
 
 - [GnuPG](https://gnupg.org/download/index.html) からWindows版バイナリ( *gpg4win-4.4.0.exe* )をダウンロード
 
-> [!NOTE]
+> [!TIP]
 > - ダウンロード時に寄付を求められますが、しなくても大丈夫です。(してもOKです。)
 > - 寄付しない場合は *$0* をクリックし、「 *Donate & Download* 」をクリックします。
 

@@ -67,7 +67,7 @@ mise use --global pnpm@latest
 > [!NOTE]
 > - `pnpm -v` でバージョンが表示されればOKです
 
-> [!NOTE]
+> [!TIP]
 > - `brew` でもインストール可能
 
 #### 2. `pnpm` でインストールするバイナリを保存するフォルダのセットアップ
