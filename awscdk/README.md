@@ -2,6 +2,10 @@
 
 # AWS CDK インストール手順
 
+> [!NOTE]
+> - TypeScript などのプログラミング言語で AWS リソースを定義し、 *CloudFormation* 経由でデプロイする IaC フレームワーク
+> - コードの再利用や型補完を活かして、AWS インフラを構築するために使用
+
 ## Windows (Git for Windows)
 
 ### 1. *Typescript* のグローバルインストール

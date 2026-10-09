@@ -2,6 +2,10 @@
 
 # OCI CLI インストール手順
 
+> [!NOTE]
+> - Oracle Cloud Infrastructure (OCI) の各サービスをコマンドラインから操作する公式 CLI
+> - OCI リソースの操作・確認やスクリプトによる自動化を行うために使用
+
 ## Windows
 
 ### 1. *Windows Long Path Support* 有効化

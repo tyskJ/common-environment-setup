@@ -2,6 +2,10 @@
 
 # rain(CloudFormation CLI実行ツール) インストール手順
 
+> [!NOTE]
+> - AWS が開発している *CloudFormation* 用の CLI
+> - デプロイ時の変更内容や進捗の表示、テンプレートの整形など、AWS CLI より扱いやすく *CloudFormation* を操作するために使用
+
 ## Windows (Git for Windows)
 
 ### 1. *rain* リソースバイナリダウンロード

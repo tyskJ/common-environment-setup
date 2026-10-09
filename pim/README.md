@@ -2,6 +2,10 @@
 
 # Python Install Manager インストール手順 - Windows Only -
 
+> [!NOTE]
+> - python.org が提供する Windows 向けの公式 *Python* インストーラー兼バージョン管理ツール ( `py` コマンド)
+> - Windows で、公式の方法により *Python* の複数バージョンを管理するために使用
+
 ## 1. *pim* インストール
 
 - [公式](https://www.python.org/downloads/windows/) より最新のインストーラー (`MSI package`) をダウンロード

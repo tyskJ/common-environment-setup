@@ -2,6 +2,10 @@
 
 # CloudFormation Linter インストール手順
 
+> [!NOTE]
+> - *CloudFormation* テンプレートの構文やプロパティを、AWS のリソース仕様に照らして検証する Linter
+> - デプロイ前にテンプレートの誤りを検出するために使用 (VSCode 拡張機能と組み合わせて利用)
+
 ## Mac
 
 ### 1. *cfn-lint* インストール

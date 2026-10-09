@@ -2,6 +2,11 @@
 
 # pyenv インストール手順
 
+> [!NOTE]
+> - *Python* の複数バージョンをインストール・切り替えるバージョン管理ツール (Windows は *pyenv-win* )
+> - プロジェクトごとに *Python* のバージョンを使い分けるために使用
+> - パッケージ管理まで含めて統一する場合は [uv / Python3](../uv_python3/README.md) を参照
+
 ## Windows (Git for Windows)
 
 ### 1. *pyenv* (Pythonバージョン管理ツール)インストール

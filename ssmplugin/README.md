@@ -2,6 +2,10 @@
 
 # Session Manager プラグイン インストール手順
 
+> [!NOTE]
+> - AWS CLI から *Systems Manager Session Manager* を利用するためのプラグイン
+> - SSH キーの管理やインバウンドポートの開放なしに、EC2 への接続やポートフォワーディングを行うために使用
+
 ## Windows
 
 ### 1. パッケージダウンロード

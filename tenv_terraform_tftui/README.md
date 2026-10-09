@@ -2,6 +2,11 @@
 
 # Terraform インストール手順
 
+> [!NOTE]
+> - *Terraform* は HashiCorp が提供する、コードでインフラを定義・構築する IaC ツール
+> - *tenv* は *Terraform* / *OpenTofu* 等のバージョン管理ツールで、プロジェクトごとにバージョンを切り替えるために使用
+> - *TFTUI* は *Terraform* の state をターミナル上で閲覧・操作する TUI ツール
+
 ## Windows (Git for Windows)
 
 ### 1. *tenv* (Terraformバージョンマネージャー)リリースバイナリダウンロード

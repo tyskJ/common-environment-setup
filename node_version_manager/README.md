@@ -2,6 +2,10 @@
 
 # Node Version Manager インストール手順
 
+> [!NOTE]
+> - *Node.js* の複数バージョンをインストール・切り替えるツール (Windows は *nvm-windows* )
+> - プロジェクトごとに必要な *Node.js* のバージョンを使い分けるために使用
+
 ## Windows
 
 ### 1. `nvm-windows` ( Windows版 `Node.js` バージョンマネージャー)インストール

@@ -3,13 +3,21 @@
 # Claude Code (CLI) & Claude Desktop インストール手順
 
 > [!NOTE]
+>
+> - Anthropic が提供する AI アシスタント
+> - _Claude Code_ はターミナルで動作するコーディングエージェント、 _Claude Desktop_ はデスクトップアプリ
+> - コードの調査・修正やドキュメント作成を、AI と対話しながら進めるために使用
+
+## Claude Code
+
+> [!NOTE]
+>
 > - Claude の利用には、CLIやDesktop版など様々なインターフェースが用意されています
 > - プランによって利用できる機能が異なります
 > - 最新のプランは [こちら](https://claude.com/ja/pricing) を参照
 
-## Claude Code
-
 > [!WARNING]
+>
 > - Claude Code の利用には、`Pro プラン` 以上の登録が必要です
 > - [こちら](https://claude.ai) から Claude にサインアップ後、登録をしてください
 
@@ -24,11 +32,13 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 ```
 
 > [!NOTE]
+>
 > - `claude --version` でバージョンが表示されればOKです
 
 ### Windows
 
 > [!NOTE]
+>
 > - Windows 環境では `Git for Windows` のインストールが推奨されています
 > - そのため、 [こちら](../git/README.md) を参考にインストールしてください
 
@@ -58,6 +68,7 @@ if (($userPath -split ';') -notcontains $addPath) {
 ```
 
 > [!NOTE]
+>
 > - Powershell を再起動し、 `claude --version` でバージョンが表示されればOKです
 
 ## 参考資料
