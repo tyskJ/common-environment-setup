@@ -2,7 +2,7 @@
 
 # Python インストール手順
 
-## Windows
+## Windows (Git for Windows)
 
 ### 1. *pyenv* (Pythonバージョン管理ツール)インストール
 
@@ -92,6 +92,9 @@ pyenv global 3.13.0
 ## Windows UTF-8問題
 
 ### Python3の文字エンコーディング設定を *UTF-8* に変更
+
+> [!NOTE]
+> - Git Bash (Git for Windows) を前提としたコマンドです
 
 ```bash
 PYTHONUTF8=1

@@ -38,6 +38,9 @@ Invoke-WebRequest https://raw.githubusercontent.com/oracle/oci-cli/master/script
 
 ### 3. ディレクトリにPATHを通す
 
+> [!NOTE]
+> - Git Bash (Git for Windows) を前提としたコマンドです
+
 ```bash
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc

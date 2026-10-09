@@ -2,7 +2,7 @@
 
 # jq(JSONコマンドライン処理ツール) インストール手順
 
-## Windows
+## Windows (Git for Windows)
 
 ### 1. *jq* リソースバイナリダウンロード
 

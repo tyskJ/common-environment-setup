@@ -2,7 +2,7 @@
 
 # Terraform インストール手順
 
-## Windows
+## Windows (Git for Windows)
 
 ### 1. *tenv* (Terraformバージョンマネージャー)リリースバイナリダウンロード
 

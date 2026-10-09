@@ -2,7 +2,7 @@
 
 # rain(CloudFormation CLI実行ツール) インストール手順
 
-## Windows
+## Windows (Git for Windows)
 
 ### 1. *rain* リソースバイナリダウンロード
 

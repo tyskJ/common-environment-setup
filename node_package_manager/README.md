@@ -6,7 +6,7 @@
 > - `npm` は `node` をインストールするとデフォルトでインストールされるため割愛
 > - お好みのパッケージマネージャーを選択してください
 
-## Windows
+## Windows (Git for Windows)
 
 ### pnpm (Performat npm)
 

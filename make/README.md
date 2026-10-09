@@ -2,7 +2,7 @@
 
 # Make コマンド インストール手順
 
-## Windows
+## Windows (Git for Windows)
 
 ### 1. パッケージダウンロード
 

@@ -2,7 +2,7 @@
 
 # AWS CDK インストール手順
 
-## Windows
+## Windows (Git for Windows)
 
 ### 1. *Typescript* のグローバルインストール
 
