@@ -85,3 +85,7 @@
 ## tenv / Terraform / TFTUI
 
 * [こちら](./tenv_terraform_tftui)
+
+## uv / Python3
+
+* [こちら](./uv_python3)
