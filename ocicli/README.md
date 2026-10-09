@@ -53,6 +53,19 @@ source ~/.bashrc
 > [!NOTE]
 > - *oci -v* でバージョンが表示されれば OK です
 
+## Mac
+
+### 1. *OCI CLI* インストール
+
+```zsh
+mise install oci
+mise use --global oci@latest
+```
+
+> [!NOTE]
+> - *mise* のセットアップは [こちら](../mise-en-place/README.md) を参照
+> - *oci -v* でバージョンが表示されれば OK です
+
 ## Linux
 
 ### 1. *OCI CLI* インストール
