@@ -7,6 +7,11 @@
 > - `npm` は `node` をインストールするとデフォルトでインストールされるため割愛
 > - お好みのパッケージマネージャーを選択してください
 
+## 目次
+
+- [pnpm (Performant npm)](#pnpm-performant-npm)
+- [参考資料](#参考資料)
+
 ## pnpm (Performant npm)
 
 > [!NOTE]

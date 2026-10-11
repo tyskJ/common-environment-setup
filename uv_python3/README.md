@@ -7,6 +7,16 @@
 > - *Python* 本体のインストールやバージョン管理、仮想環境の作成も含め、 *pip* / *pyenv* / *venv* の役割をまとめて担う
 > - `exclude-newer` で公開直後のパッケージを除外でき、サプライチェーン攻撃対策になるため使用
 
+## 目次
+
+- [Windows (Git for Windows)](#windows-git-for-windows)
+- [Mac](#mac)
+- [Linux](#linux)
+- [exclude-newer 設定](#exclude-newer-設定)
+- [パッケージ / ツールのインストール](#パッケージ--ツールのインストール)
+- [Pythonエラー解消](#pythonエラー解消)
+- [参考資料](#参考資料)
+
 ## Windows (Git for Windows)
 
 ### 1. *uv* インストール

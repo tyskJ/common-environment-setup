@@ -7,6 +7,15 @@
 > - ソースコードや手順書の変更履歴を管理し、GitHub と連携するために使用
 > - Windows では *Git for Windows* に同梱される *Git Bash* を標準シェルとして使用
 
+## 目次
+
+- [Windows](#windows)
+- [Mac](#mac)
+- [Must](#must)
+- [Option](#option)
+- [Credentials](#credentials)
+- [参考資料](#参考資料)
+
 ## Windows
 
 ### 1. インストーラダウンロード

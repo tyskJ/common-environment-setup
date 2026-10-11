@@ -7,6 +7,13 @@
 > - コードの再利用や型補完を活かして、AWS インフラを構築するために使用
 > - 事前に *Node.js* ( [こちら](../node_version_manager/README.md) ) と *pnpm* ( [こちら](../node_package_manager/README.md) ) をセットアップしてください
 
+## 目次
+
+- [Windows (Git for Windows)](#windows-git-for-windows)
+- [Mac](#mac)
+- [初期作業 - Typescript](#初期作業---typescript)
+- [参考資料](#参考資料)
+
 ## Windows (Git for Windows)
 
 ### 1. *Typescript* のグローバルインストール

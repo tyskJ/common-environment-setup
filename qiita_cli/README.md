@@ -19,6 +19,13 @@
 > - パッケージ名は `@qiita/qiita-cli` です
 > - 名前が似た別のパッケージをインストールしないよう注意してください
 
+## 目次
+
+- [Windows (Git for Windows)](#windows-git-for-windows)
+- [Mac](#mac)
+- [初期作業](#初期作業)
+- [参考資料](#参考資料)
+
 ## Windows (Git for Windows)
 
 ### 1. 記事を管理するディレクトリの作成

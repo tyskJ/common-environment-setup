@@ -6,6 +6,14 @@
 > - 開発ツールのバージョンや環境変数をまとめて管理するツール
 > - 複数のツールのバージョンを、環境全体やディレクトリごとに切り替えるために使用
 
+## 目次
+
+- [Windows (Git for Windows)](#windows-git-for-windows)
+- [Mac](#mac)
+- [Linux](#linux)
+- [Config ( ~/.config/mise/config.toml )](#config--configmiseconfigtoml-)
+- [参考資料](#参考資料)
+
 ## Windows (Git for Windows)
 
 ### 1. *mise* インストール

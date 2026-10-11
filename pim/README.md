@@ -6,6 +6,11 @@
 > - python.org が提供する Windows 向けの公式 *Python* インストーラー兼バージョン管理ツール ( `py` コマンド)
 > - Windows で、公式の方法により *Python* の複数バージョンを管理するために使用
 
+## 目次
+
+- [Windows](#windows)
+- [参考資料](#参考資料)
+
 ## Windows
 
 ### 1. *pim* インストール

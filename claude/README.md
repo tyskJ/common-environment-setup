@@ -8,6 +8,12 @@
 > - _Claude Code_ はターミナルで動作するコーディングエージェント、 _Claude Desktop_ はデスクトップアプリ
 > - コードの調査・修正やドキュメント作成を、AI と対話しながら進めるために使用
 
+## 目次
+
+- [Claude Code](#claude-code)
+- [Claude Desktop](#claude-desktop)
+- [参考資料](#参考資料)
+
 ## Claude Code
 
 > [!NOTE]

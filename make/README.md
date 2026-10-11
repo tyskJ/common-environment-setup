@@ -6,6 +6,11 @@
 > - *Makefile* に定義したタスクを実行するビルド自動化ツール
 > - 定型コマンドをタスクとしてまとめ、短いコマンドで実行するために使用
 
+## 目次
+
+- [Windows (Git for Windows)](#windows-git-for-windows)
+- [参考資料](#参考資料)
+
 ## Windows (Git for Windows)
 
 ### 1. パッケージダウンロード

@@ -6,6 +6,13 @@
 > - AWS が開発している *CloudFormation* 用の CLI
 > - デプロイ時の変更内容や進捗の表示、テンプレートの整形など、AWS CLI より扱いやすく *CloudFormation* を操作するために使用
 
+## 目次
+
+- [Windows (Git for Windows)](#windows-git-for-windows)
+- [Mac](#mac)
+- [Linux](#linux)
+- [参考資料](#参考資料)
+
 ## Windows (Git for Windows)
 
 ### 1. *rain* リソースバイナリダウンロード

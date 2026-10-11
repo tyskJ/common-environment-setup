@@ -7,6 +7,13 @@
 > - プロジェクトごとに *Python* のバージョンを使い分けるために使用
 > - パッケージ管理まで含めて統一する場合は [uv / Python3](../uv_python3/README.md) を参照
 
+## 目次
+
+- [Windows (Git for Windows)](#windows-git-for-windows)
+- [Linux](#linux)
+- [Pythonエラー解消](#pythonエラー解消)
+- [参考資料](#参考資料)
+
 ## Windows (Git for Windows)
 
 ### 1. *pyenv* (Pythonバージョン管理ツール)インストール

@@ -6,6 +6,12 @@
 > - AWS CLI から *Systems Manager Session Manager* を利用するためのプラグイン
 > - SSH キーの管理やインバウンドポートの開放なしに、EC2 への接続やポートフォワーディングを行うために使用
 
+## 目次
+
+- [Windows](#windows)
+- [Mac ( with Apple silicon )](#mac--with-apple-silicon-)
+- [参考資料](#参考資料)
+
 ## Windows
 
 ### 1. パッケージダウンロード
