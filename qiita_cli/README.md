@@ -26,19 +26,14 @@ mkdir qiita && cd qiita
 > [!NOTE]
 > - ディレクトリ名は任意です
 
-### 2. `package.json` の作成
-
-```bash
-pnpm init
-```
-
-### 3. *Qiita CLI* のインストール
+### 2. *Qiita CLI* のインストール
 
 ```bash
 pnpm add -D @qiita/qiita-cli
 ```
 
 > [!NOTE]
+> - `package.json` がない場合は自動で作成されます
 > - `pnpm exec qiita version` でバージョンが表示されればOKです
 
 > [!TIP]
@@ -55,19 +50,14 @@ mkdir qiita && cd qiita
 > [!NOTE]
 > - ディレクトリ名は任意です
 
-### 2. `package.json` の作成
-
-```zsh
-pnpm init
-```
-
-### 3. *Qiita CLI* のインストール
+### 2. *Qiita CLI* のインストール
 
 ```zsh
 pnpm add -D @qiita/qiita-cli
 ```
 
 > [!NOTE]
+> - `package.json` がない場合は自動で作成されます
 > - `pnpm exec qiita version` でバージョンが表示されればOKです
 
 ## 初期作業
