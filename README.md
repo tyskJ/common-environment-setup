@@ -21,6 +21,7 @@
 | [Python Install Manager (PIM)](./pim) | Windows 向けの公式 Python インストーラー兼バージョン管理ツール |
 | [Postman](./postman) | API の動作確認やテストを GUI で行う API クライアント |
 | [pyenv / Python3](./pyenv_python3) | Python のバージョン管理ツール (Windows は pyenv-win) |
+| [Qiita CLI](./qiita_cli) | Qiita の記事をローカルで執筆・プレビュー・投稿できる公式 CLI |
 | [rain](./rain) | AWS 製の CloudFormation 用 CLI |
 | [SSM Plugin](./ssmplugin) | AWS CLI から Session Manager を利用するためのプラグイン |
 | [tenv / Terraform / TFTUI](./tenv_terraform_tftui) | Terraform のバージョン管理ツール / IaC ツール / TUI ツール |
