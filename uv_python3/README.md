@@ -45,6 +45,11 @@ uv python install 3.13 --default
 
 > [!NOTE]
 > - `--default` を付けると、 `python` / `python3` コマンドも `~/.local/bin` に配置されます ( *experimental* な機能です)
+> - バージョンを省略した場合、インストールされるバージョンは以下の優先順で決まります
+>   1. 環境変数 `UV_PYTHON`
+>   2. `.python-versions` / `.python-version` ファイル
+>   3. 上記がなく、 *uv* 管理の Python が 1 つもインストールされていなければ最新の安定版
+>      - 既にインストール済みの場合は、新しいバージョンはインストールされません
 > - `uv python list` でインストール可能 / インストール済みバージョン一覧を取得できます
 
 ### 3. ディレクトリにPATHを通す
@@ -83,6 +88,11 @@ uv python install 3.13 --default
 
 > [!NOTE]
 > - `--default` を付けると、 `python` / `python3` コマンドも `~/.local/bin` に配置されます ( *experimental* な機能です)
+> - バージョンを省略した場合、インストールされるバージョンは以下の優先順で決まります
+>   1. 環境変数 `UV_PYTHON`
+>   2. `.python-versions` / `.python-version` ファイル
+>   3. 上記がなく、 *uv* 管理の Python が 1 つもインストールされていなければ最新の安定版
+>      - 既にインストール済みの場合は、新しいバージョンはインストールされません
 > - `uv python list` でインストール可能 / インストール済みバージョン一覧を取得できます
 
 ### 3. ディレクトリにPATHを通す
@@ -125,6 +135,11 @@ uv python install 3.13 --default
 
 > [!NOTE]
 > - `--default` を付けると、 `python` / `python3` コマンドも `~/.local/bin` に配置されます ( *experimental* な機能です)
+> - バージョンを省略した場合、インストールされるバージョンは以下の優先順で決まります
+>   1. 環境変数 `UV_PYTHON`
+>   2. `.python-versions` / `.python-version` ファイル
+>   3. 上記がなく、 *uv* 管理の Python が 1 つもインストールされていなければ最新の安定版
+>      - 既にインストール済みの場合は、新しいバージョンはインストールされません
 > - `python --version` でバージョンが表示されればOKです
 
 ### 3. シェル補完
@@ -214,6 +229,7 @@ source ~/.bashrc
 
 - [Installation - uv](https://docs.astral.sh/uv/getting-started/installation/)
 - [Installing Python - uv](https://docs.astral.sh/uv/guides/install-python/)
+- [Commands - uv](https://docs.astral.sh/uv/reference/cli/#uv-python-install)
 - [Settings - uv](https://docs.astral.sh/uv/reference/settings/)
 - [Using tools - uv](https://docs.astral.sh/uv/guides/tools/)
 - [PEP 686 – Make UTF-8 mode default](https://peps.python.org/pep-0686/)
