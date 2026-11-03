@@ -24,5 +24,5 @@
 | [Qiita CLI](./qiita_cli) | Qiita の記事をローカルで執筆・プレビュー・投稿できる公式 CLI |
 | [rain](./rain) | AWS 製の CloudFormation 用 CLI |
 | [SSM Plugin](./ssmplugin) | AWS CLI から Session Manager を利用するためのプラグイン |
-| [tenv / Terraform / TFTUI](./tenv_terraform_tftui) | Terraform のバージョン管理ツール / IaC ツール / TUI ツール |
+| [tenv / Terraform / TFTUI / TFLint](./tenv_terraform_tftui_tflint) | Terraform のバージョン管理ツール / IaC ツール / TUI ツール / Linter |
 | [uv / Python3](./uv_python3) | Rust 製の高速な Python パッケージ / プロジェクト管理ツール |
