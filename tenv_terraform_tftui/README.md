@@ -167,6 +167,27 @@ uv tool install tftui
 brew install idoavrah/homebrew/tftui
 ```
 
+### Linux
+
+#### 1. *tftui* インストール
+
+- [GitHub](https://github.com/idoavrah/terraform-tui/tree/main) のパッケージを *uv* でインストール
+
+```bash
+uv tool install tftui
+```
+
+> [!NOTE]
+> - *uv* のセットアップは [こちら](../uv_python3/README.md) を参照
+> - `uv tool list` に *tftui* が表示されればOKです
+
+> [!TIP]
+> - *pyenv* ( [こちら](../pyenv_python3/README.md) ) で *Python* をインストールしている場合は、 *pip* でもインストール可能です
+>
+> ```bash
+> pip install tftui
+> ```
+
 ## 参考資料
 
 ### リファレンス
