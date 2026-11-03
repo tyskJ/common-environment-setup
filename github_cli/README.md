@@ -1,4 +1,4 @@
-![](./doc/001samune.png)
+![](./docs/assets/samune.png)
 
 # GitHub CLI インストール手順
 

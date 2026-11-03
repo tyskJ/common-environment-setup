@@ -1,4 +1,4 @@
-![](./doc/001samune.png)
+![](./docs/assets/samune.png)
 
 # tenv / Terraform / TFTUI / TFLint インストール手順
 
