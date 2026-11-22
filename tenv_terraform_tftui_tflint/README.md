@@ -58,7 +58,7 @@ tenv tf install latest # ~/.tenv/Terraform/バージョン番号/に保存され
 
 ```bash
 tenv tf list # インストールしたバージョンを確認
-tenv tf use v1.10.3
+tenv tf use latest
 ```
 
 > [!NOTE]
@@ -83,7 +83,7 @@ tenv tf install latest # ~/.tenv/Terraform/バージョン番号/に保存され
 
 ```bash
 tenv tf list # インストールしたバージョンを確認
-tenv tf use v1.14.1
+tenv tf use latest
 ```
 
 > [!NOTE]
@@ -126,7 +126,7 @@ tenv tf install latest # ~/.tenv/Terraform/バージョン番号/に保存され
 
 ```bash
 tenv tf list # インストールしたバージョンを確認
-tenv tf use v1.10.3
+tenv tf use latest
 ```
 
 > [!NOTE]

@@ -29,11 +29,11 @@ nvm install lts
 ### 3. LTS版の使用
 
 ```bash
-nvm use 22.12.0
+nvm use lts
 ```
 
 > [!NOTE]
-> - バージョン `nvm list` でインストール済みの値を指定
+> - `nvm list` でインストール済みのバージョンを確認できます
 > - `nvm` で管理している `node.js` のパッケージは「 `~/AppData/Roaming/nvm/{nodeバージョン番号}/` 」に格納されている
 
 ## Mac
