@@ -44,6 +44,7 @@ mise use --global aws@latest
 > [!TIP]
 > - `brew` でもインストール可能 ( `brew install awscli` )
 > - その場合、手順 2 は不要です
+> - *mise* と `brew` を併用すると `aws` が 2 つになり、 PATH の順番で使われる方が変わるため、どちらか一方にしてください
 
 ### 2. `symlink_bins` 設定
 

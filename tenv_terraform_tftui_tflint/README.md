@@ -160,6 +160,7 @@ uv tool install tftui
 
 > [!TIP]
 > - *pyenv* ( [こちら](../pyenv_python3/README.md) ) や *PIM* ( [こちら](../pim/README.md) ) で *Python* をインストールしている場合は、 *pip* でもインストール可能です
+> - *uv* と *pip* を併用すると `tftui` が 2 つになり、 PATH の順番で使われる方が変わるため、どちらか一方にしてください
 >
 > ```bash
 > pip install tftui
@@ -189,6 +190,7 @@ uv tool install tftui
 
 > [!TIP]
 > - *pyenv* ( [こちら](../pyenv_python3/README.md) ) で *Python* をインストールしている場合は、 *pip* でもインストール可能です
+> - *uv* と *pip* を併用すると `tftui` が 2 つになり、 PATH の順番で使われる方が変わるため、どちらか一方にしてください
 >
 > ```bash
 > pip install tftui

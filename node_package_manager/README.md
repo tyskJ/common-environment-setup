@@ -62,7 +62,9 @@ mise use --global pnpm@latest
 > - `pnpm -v` でバージョンが表示されればOKです
 
 > [!TIP]
-> - `brew` でもインストール可能
+> - `brew` でもインストール可能 ( `brew install pnpm` )
+> - *mise* と `brew` を併用すると `pnpm` が 2 つになり、 PATH の順番で使われる方が変わるため、どちらか一方にしてください
+> - `brew` でインストールした場合、更新は `brew upgrade pnpm` で行います ( `pnpm self-update` は使えません)
 
 #### 2. `pnpm` でインストールするバイナリを保存するフォルダのセットアップ
 
