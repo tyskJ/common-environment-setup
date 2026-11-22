@@ -27,6 +27,18 @@
 > - Claude Code の利用には、`Pro プラン` 以上の登録が必要です
 > - [こちら](https://claude.ai) から Claude にサインアップ後、登録をしてください
 
+> [!WARNING]
+>
+> - 以前 *npm* ( `npm install -g @anthropic-ai/claude-code` ) で Claude Code をインストールしていた場合は、アンインストールしてから本手順でインストールしてください
+> - 残っていると `claude` が 2 つになり、 PATH の順番で使われる方が変わります
+> - 本リポジトリの手順では `npm` をエイリアスで止めているため ( [こちら](../node_package_manager/README.md#npm--npx-抑止) ) 、 `command` を付けてエイリアスを回避して実行します
+>
+> ```bash
+> command npm uninstall -g @anthropic-ai/claude-code
+> ```
+>
+> - インストール後、 `which -a claude` で `claude` が 1 つだけになっていることを確認できます
+
 ### Windows
 
 > [!NOTE]

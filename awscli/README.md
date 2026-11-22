@@ -6,6 +6,11 @@
 > - AWS の各サービスをコマンドラインから操作する公式 CLI
 > - マネジメントコンソールを使わずに、AWS リソースの操作・確認やスクリプトによる自動化を行うために使用
 
+> [!WARNING]
+> - *AWS CLI* v1 と v2 は同じ `aws` コマンド名を使うため、以前 *pip* 等で v1 をインストールしていた場合は、アンインストールしてから v2 をインストールしてください (例: `pip uninstall awscli` )
+> - 残っていると PATH の順番によって v1 が使われます。 `aws --version` が `aws-cli/2.x` になっていることを確認してください
+> - v1 から v2 への変更点は [移行ガイド](https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cliv2-migration.html) を参照してください
+
 ## 目次
 
 - [Windows](#windows)

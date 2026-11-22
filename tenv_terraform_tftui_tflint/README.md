@@ -8,6 +8,12 @@
 > - *TFTUI* は *Terraform* の state をターミナル上で閲覧・操作する TUI ツール
 > - *TFLint* は *Terraform* コードの誤りや非推奨の書き方を検出する Linter
 
+> [!WARNING]
+> - *tenv* は `terraform` コマンドを自身で提供するため、 *Terraform* を別の方法 (HashiCorp 公式のバイナリ / `winget` の `Hashicorp.Terraform` / HashiCorp の `dnf` リポジトリ等) でインストールしている場合や、 *tfenv* 等の別のバージョン管理ツールを使っている場合は、アンインストールしてから *tenv* を使用してください
+> - 残っていると `terraform` が 2 つになり、 PATH の順番によっては `tenv tf use` で切り替えたバージョンが使われません
+> - Mac の Homebrew は *tenv* と *tfenv* 等の同時インストールを拒否しますが、 Windows / Linux にはその仕組みがありません
+> - `which -a terraform` (Windows の *PowerShell* では `Get-Command terraform -All` ) で `terraform` が 1 つだけになっていることを確認できます
+
 ## 目次
 
 - [Windows (Git for Windows)](#windows-git-for-windows)
