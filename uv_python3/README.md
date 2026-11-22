@@ -196,6 +196,16 @@ EOF
 > - `uv tool install` はツールごとに専用の仮想環境を作成し、コマンドを `~/.local/bin` に配置します
 > - `uv tool list` でインストール済みツールの一覧を確認できます
 
+> [!NOTE]
+> - `uv tool install` でインストールしたツールは、インストール時の *Python* に紐づきます
+> - パッチバージョンの更新 ( `3.14.x` ) は `uv python upgrade` で行うと、ツールも自動で新しいバージョンを使います
+> - マイナーバージョンを上げた場合 ( `3.14` → `3.15` ) 、ツールは旧バージョンの *Python* のまま動作し、旧バージョンを削除すると動かなくなります
+> - 新しいバージョンで使う場合は、以下のように再インストールしてください
+>
+> ```bash
+> uv tool install --reinstall --python 3.15 <package>
+> ```
+
 > [!TIP]
 > - 仮想環境内で `pip` 自体を使いたい場合は `uv venv --seed` で作成すると *pip* も同梱されます
 
@@ -232,4 +242,6 @@ source ~/.bashrc
 - [Commands - uv](https://docs.astral.sh/uv/reference/cli/#uv-python-install)
 - [Settings - uv](https://docs.astral.sh/uv/reference/settings/)
 - [Using tools - uv](https://docs.astral.sh/uv/guides/tools/)
+- [Tools - uv](https://docs.astral.sh/uv/concepts/tools/)
+- [Python versions - uv](https://docs.astral.sh/uv/concepts/python-versions/)
 - [PEP 686 – Make UTF-8 mode default](https://peps.python.org/pep-0686/)

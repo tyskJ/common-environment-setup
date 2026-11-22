@@ -6,6 +6,11 @@
 > - *Node.js* の複数バージョンをインストール・切り替えるツール (Windows は *nvm-windows* )
 > - プロジェクトごとに必要な *Node.js* のバージョンを使い分けるために使用
 
+> [!NOTE]
+> - パッケージのインストールには *npm* ではなく [pnpm](../node_package_manager/README.md) を使用してください
+>   - `minimumReleaseAge` で公開直後のパッケージを除外でき、サプライチェーン攻撃対策になるため
+>   - *pnpm* のグローバルパッケージは *Node.js* のバージョンとは別の場所に保存されるため、 *Node.js* のバージョンアップ後もそのまま使えます ( *npm* でインストールしたものは *Node.js* のバージョンごとに保存され、引き継がれません)
+
 ## 目次
 
 - [Windows](#windows)
@@ -34,7 +39,10 @@ nvm use lts
 
 > [!NOTE]
 > - `nvm list` でインストール済みのバージョンを確認できます
-> - `nvm` で管理している `node.js` のパッケージは「 `~/AppData/Roaming/nvm/{nodeバージョン番号}/` 」に格納されている
+> - `nvm` でインストールした *Node.js* は、バージョンごとに以下のフォルダに格納されます
+>   - *nvm-windows* v2 : 「 `~/AppData/Local/Author Software/nvm/installs/v{バージョン番号}/` 」 ( `nvm config` の `root` で変更可能)
+>   - *nvm-windows* v1 : 「 `~/AppData/Roaming/nvm/v{バージョン番号}/` 」
+> - *npm* でグローバルインストールしたパッケージも、そのバージョンのフォルダ内の `node_modules/` に格納されるため、別のバージョンには引き継がれません
 
 ## Mac
 
@@ -120,6 +128,10 @@ nvm use --lts
 ### リファレンス
 
 - [nvm-sh / nvm - GitHub](https://github.com/nvm-sh/nvm)
+- [coreybutler / nvm-windows - GitHub](https://github.com/coreybutler/nvm-windows)
+- [Core configuration - NVM for Windows](https://docs.nvm-windows.com/cfg/core)
+- [nvm use - NVM for Windows](https://docs.nvm-windows.com/command/nvm/use)
+- [Global module shims - NVM for Windows](https://docs.nvm-windows.com/command/global-module-shims)
 
 ### ブログ
 

@@ -9,6 +9,7 @@
 ## 目次
 
 - [Windows](#windows)
+- [バージョンアップ時の注意](#バージョンアップ時の注意)
 - [参考資料](#参考資料)
 
 ## Windows
@@ -51,9 +52,26 @@ SystemPropertiesAdvanced
 > [!NOTE]
 > - ターミナルを再起動し、`pip3 --version` でバージョンが表示されればOKです
 
+## バージョンアップ時の注意
+
+> [!NOTE]
+> - *Python* はマイナーバージョン ( `3.14` / `3.15` など) ごとに別の場所へインストールされ、 `pip install` でインストールしたパッケージもバージョンごとに保存されるため、新しいバージョンには引き継がれません
+> - 旧バージョンでパッケージ一覧を書き出し、新バージョンで再インストールしてください
+>
+> ```powershell
+> py -V:3.14 -m pip freeze > requirements.txt     # 旧バージョンのパッケージ一覧を書き出し
+> py install 3.15                                 # 新バージョンをインストール
+> py -V:3.15 -m pip install -r requirements.txt   # 新バージョンで再インストール
+> py uninstall 3.14                               # 不要であれば旧バージョンを削除
+> ```
+>
+> - バージョン番号は例です。 `py list` でインストール済みのバージョンを確認できます
+
 ## 参考資料
 
 ### リファレンス
 
 - [python.org](https://www.python.org/)
+- [Windows で Python を使う - Python ドキュメント](https://docs.python.org/ja/3/using/windows.html)
+- [pip freeze - pip documentation](https://pip.pypa.io/en/stable/cli/pip_freeze/)
 - [アプリ インストーラーのセキュリティ機能](https://learn.microsoft.com/ja-jp/windows/msix/app-installer/app-installer-security-features)

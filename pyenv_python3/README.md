@@ -11,6 +11,7 @@
 
 - [Windows (Git for Windows)](#windows-git-for-windows)
 - [Linux](#linux)
+- [バージョンアップ時の注意](#バージョンアップ時の注意)
 - [Pythonエラー解消](#pythonエラー解消)
 - [参考資料](#参考資料)
 
@@ -100,6 +101,20 @@ pyenv global 3.14.10
 > [!NOTE]
 > - `python -V` でバージョンが表示されればOKです
 
+## バージョンアップ時の注意
+
+> [!NOTE]
+> - `pip install` でインストールしたパッケージは *Python* のバージョンごとに保存されるため、新しいバージョンに切り替えると旧バージョンのパッケージは引き継がれません
+> - 切り替える前に旧バージョンでパッケージ一覧を書き出し、切り替え後に再インストールしてください
+>
+> ```bash
+> pip freeze > ~/requirements.txt  # 切り替え前 (旧バージョン) で実行
+> pyenv install <新バージョン>
+> pyenv global <新バージョン>
+> pip install -r ~/requirements.txt # 新バージョンで再インストール
+> pyenv uninstall <旧バージョン>    # 不要であれば旧バージョンを削除
+> ```
+
 ## Pythonエラー解消
 
 ### Windows UTF-8問題
@@ -129,6 +144,8 @@ source ~/.bashrc
 ### リファレンス
 
 - [pyenv - GitHub](https://github.com/pyenv/pyenv)
+- [pyenv-win - GitHub](https://github.com/pyenv-win/pyenv-win)
+- [pip freeze - pip documentation](https://pip.pypa.io/en/stable/cli/pip_freeze/)
 - [PEP 686 – Make UTF-8 mode default](https://peps.python.org/pep-0686/)
 
 ### ブログ
