@@ -2,6 +2,16 @@
 
 # rain インストール手順
 
+> [!WARNING]
+> - *rain* は非推奨 (deprecated) となり、GitHub リポジトリはアーカイブ (読み取り専用) されています
+> - 今後、新しいリリース・バグ修正・セキュリティパッチは提供されません (最終リリースは *v1.24.4*)
+> - Homebrew の formula も `repo_archived` を理由に deprecated となっています
+> - 公式では以下への移行が推奨されています
+>   - *CloudFormation* の操作 : [AWS CLI](../awscli)
+>   - モジュールなど再利用可能なコンポーネントの作成 : [AWS CDK](../awscdk)
+>   - テンプレートの検証 : [CloudFormation Linter](../cfn-lint)
+>   - ポリシーチェック : [CloudFormation Guard](../cfn-guard)
+
 > [!NOTE]
 > - AWS が開発している *CloudFormation* 用の CLI
 > - デプロイ時の変更内容や進捗の表示、テンプレートの整形など、AWS CLI より扱いやすく *CloudFormation* を操作するために使用
@@ -17,10 +27,10 @@
 
 ### 1. *rain* リソースバイナリダウンロード
 
-- [GitHub release page](https://github.com/aws-cloudformation/rain/releases) から64bit版バイナリ( *rain-v1.20.2_windows-amd64.zip* )をダウンロード
+- [GitHub release page](https://github.com/aws-cloudformation/rain/releases) から64bit版バイナリ( *rain-v1.24.4_windows-amd64.zip* )をダウンロード
 
 ```bash
-RAIN_V=v1.20.2
+RAIN_V=v1.24.4
 curl -o ~/Downloads/#1 -OL https://github.com/aws-cloudformation/rain/releases/download/${RAIN_V}/{rain-${RAIN_V}_windows-amd64.zip}
 ```
 
@@ -35,10 +45,13 @@ rm -f ~/Downloads/rain-${RAIN_V}_windows-amd64.zip
 
 ```bash
 touch ~/.bashrc # .bashrcがない場合実行
-sed -i '$aexport RAIN_V=v1.20.2' ~/.bashrc
+sed -i '$aexport RAIN_V=v1.24.4' ~/.bashrc
 sed -i '$aexport PATH=$PATH:$HOME/rain-${RAIN_V}_windows-amd64' ~/.bashrc
 source ~/.bashrc
 ```
+
+> [!NOTE]
+> - `rain --version` でバージョンが表示されればOKです
 
 ## Mac
 
@@ -48,14 +61,17 @@ source ~/.bashrc
 brew install rain
 ```
 
+> [!NOTE]
+> - `rain --version` でバージョンが表示されればOKです
+
 ## Linux
 
 ### 1. *rain* リソースバイナリダウンロード
 
-- [GitHub release page](https://github.com/aws-cloudformation/rain/releases) から64bit版バイナリ( *rain-v1.24.2_linux-amd64.zip* )をダウンロード
+- [GitHub release page](https://github.com/aws-cloudformation/rain/releases) から64bit版バイナリ( *rain-v1.24.4_linux-amd64.zip* )をダウンロード
 
 ```bash
-RAIN_V=v1.24.2
+RAIN_V=v1.24.4
 curl -OL https://github.com/aws-cloudformation/rain/releases/download/${RAIN_V}/rain-${RAIN_V}_linux-amd64.zip
 ```
 
