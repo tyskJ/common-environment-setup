@@ -156,6 +156,8 @@ pnpm config set --location=global minimumReleaseAge 10080 # 10080分 = 7日
 ### リファレンス
 
 - [インストール - pnpm](https://pnpm.io/ja/installation)
+- [pnpm setup - pnpm](https://pnpm.io/ja/cli/setup)
+- [@pnpm/global.commands (Isolated Global Packages) - GitHub](https://github.com/pnpm/pnpm/blob/main/pnpm11/global/commands/README.md)
 
 ### ブログ
 
