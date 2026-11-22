@@ -15,14 +15,11 @@
 
 ### 1. *jq* リソースバイナリダウンロード
 
-- [GitHub](https://github.com/jqlang/jq/releases) から64bit版バイナリ( *jq-windows-amd64.exe* )をダウンロード
+- [GitHub](https://github.com/jqlang/jq/releases) から最新の64bit版バイナリ( *jq-windows-amd64.exe* )をダウンロード
 
 ```bash
-curl -o ~/Downloads/#1 -OL https://github.com/jqlang/jq/releases/download/jq-1.7.1/{jq-windows-amd64.exe}
+curl -o ~/Downloads/#1 -OL https://github.com/jqlang/jq/releases/latest/download/{jq-windows-amd64.exe}
 ```
-
-> [!NOTE]
-> - バージョンは実行時の最新に合わせてください
 
 ### 2. バイナリを任意のフォルダに配置
 

@@ -19,15 +19,18 @@
 
 ### 1. *GnuPG* バイナリデータダウンロード
 
-- [GnuPG](https://gnupg.org/download/index.html) からWindows版バイナリ( *gpg4win-4.4.0.exe* )をダウンロード
+- [Gpg4win](https://www.gpg4win.org/) の配布サーバーから最新のWindows版インストーラ( *gpg4win-latest.exe* )をダウンロード
+
+```bash
+curl -o ~/Downloads/#1 -OL https://files.gpg4win.org/{gpg4win-latest.exe}
+```
 
 > [!TIP]
-> - ダウンロード時に寄付を求められますが、しなくても大丈夫です。(してもOKです。)
-> - 寄付しない場合は *$0* をクリックし、「 *Donate & Download* 」をクリックします。
+> - 配布サーバーから直接ダウンロードするため、公式サイト経由の場合に表示される寄付画面は表示されません
 
 ### 2. インストーラ実行
 
-- *gpg4win-4.4.0.exe* をダブルクリックし、インストーラを実行
+- *~/Downloads/gpg4win-latest.exe* をダブルクリックし、インストーラを実行
 
 > [!NOTE]
 > - デフォルト設定で問題ありません。
