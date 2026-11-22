@@ -16,6 +16,7 @@
 - [Windows](#windows)
 - [Mac](#mac)
 - [Linux](#linux)
+- [nvm 自体のバージョンアップ](#nvm-自体のバージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows
@@ -122,6 +123,18 @@ nvm use --lts
 
 > [!NOTE]
 > - `node -v` でバージョンが表示されればOKです
+
+## nvm 自体のバージョンアップ
+
+| OS | 手順 |
+| --- | --- |
+| Windows ( *nvm-windows* v2 ) | `nvm upgrade` ( `nvm upgrade --check` で更新有無のみ確認) |
+| Windows ( *nvm-windows* v1 ) | [GitHub](https://github.com/coreybutler/nvm-windows) から v2 のインストーラを実行 (v1.1.7 以降は設定とインストール済みの *Node.js* が v2 に移行されます) |
+| Mac | `brew upgrade nvm` |
+| Linux | `NVM_V` を最新版にして [Linux の手順 1](#1-nvm-インストール-1) を再実行 |
+
+> [!NOTE]
+> - Linux の *nvm* はインストールスクリプトが更新も兼ねており、再実行すると `~/.nvm` が新しいバージョンに更新されます
 
 ## 参考資料
 

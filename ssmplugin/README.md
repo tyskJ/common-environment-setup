@@ -10,6 +10,7 @@
 
 - [Windows](#windows)
 - [Mac ( with Apple silicon )](#mac--with-apple-silicon-)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows
@@ -54,6 +55,17 @@ sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local
 ```zsh
 session-manager-plugin
 ```
+
+## バージョンアップ
+
+| OS | 手順 |
+| --- | --- |
+| Windows | [Windows の手順 1・2](#1-パッケージダウンロード) を再実行し、最新版のインストーラで上書きインストール |
+| Mac ( `with Apple silicon` ) | [Mac の手順 1](#1-パッケージダウンロード-1) と、手順 2 の `sudo installer` を再実行 (シンボリックリンクは作成済みのため `ln -s` は不要) |
+
+> [!NOTE]
+> - ダウンロード URL ( `plugin/latest/` ) が常に最新版を指しているため、そのまま再実行すれば最新版になります
+> - 更新後、 `session-manager-plugin --version` でバージョンを確認できます
 
 ## 参考資料
 

@@ -9,6 +9,7 @@
 ## 目次
 
 - [Mac](#mac)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Mac
@@ -17,6 +18,12 @@
 
 ```zsh
 brew install cfn-lint
+```
+
+## バージョンアップ
+
+```zsh
+brew upgrade cfn-lint
 ```
 
 ## 参考資料

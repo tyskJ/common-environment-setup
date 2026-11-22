@@ -13,6 +13,7 @@
 - [Linux](#linux)
 - [バージョンアップ時の注意](#バージョンアップ時の注意)
 - [Pythonエラー解消](#pythonエラー解消)
+- [pyenv 自体のバージョンアップ](#pyenv-自体のバージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows (Git for Windows)
@@ -138,6 +139,18 @@ source ~/.bashrc
 > - 例えば *AWS CLI* では、 `aws cloudformation package` 実行時の yaml ファイル出力でエラーが発生します
 > - 環境変数 `PYTHONUTF8=1` で *UTF-8 モード* を有効化し、 *Python3* の既定の文字コードを *UTF-8* にします
 > - *Python3.15* 以降は *UTF-8 モード* が既定で有効になる予定です ( *PEP 686* )
+
+## pyenv 自体のバージョンアップ
+
+| OS | 手順 |
+| --- | --- |
+| Windows (Git for Windows) | `git -C ~/.pyenv pull` |
+| Linux | `pyenv update` |
+
+> [!NOTE]
+> - Windows は *pyenv-win* を `git clone` でインストールしているため、 `git pull` で更新します ( *pyenv-win* の `pyenv update` はインストール可能な *Python* の一覧を更新するコマンドです)
+> - Linux の `pyenv update` は、インストールスクリプト ( `pyenv.run` ) で一緒に導入される *pyenv-update* プラグインのコマンドです
+> - インストール可能な新しい *Python* が `pyenv install --list` に表示されない場合も、上記で更新してください
 
 ## 参考資料
 

@@ -24,6 +24,7 @@
 - [Windows (Git for Windows)](#windows-git-for-windows)
 - [Mac](#mac)
 - [初期作業](#初期作業)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows (Git for Windows)
@@ -122,6 +123,18 @@ pnpm exec qiita preview
 >
 > - ブラウザで `http://localhost:8888` を開き、プレビュー画面が表示されればOKです
 > - 起動時に Qiita へ投稿済みの記事が `public/` ディレクトリにダウンロードされます
+
+## バージョンアップ
+
+- 記事を管理するディレクトリ (プロジェクト) で実行します (全 OS 共通)
+
+```bash
+pnpm update --latest @qiita/qiita-cli # --latest: package.json の範囲指定を超えて最新版に更新
+pnpm ls @qiita/qiita-cli              # 更新後のバージョンを確認
+```
+
+> [!NOTE]
+> - `package.json` / `pnpm-lock.yaml` が更新されるため、記事と一緒にコミットしてください
 
 ## 参考資料
 

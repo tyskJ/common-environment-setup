@@ -16,6 +16,7 @@
 - [Terraform 共通設定](#terraform-共通設定)
 - [Terraform TUI](#terraform-tui)
 - [TFLint](#tflint)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows (Git for Windows)
@@ -284,6 +285,44 @@ plugin "aws" {
 tflint --init # .tflint.hcl に定義したプラグインをインストール
 tflint --recursive # サブディレクトリも含めて検査
 ```
+
+## バージョンアップ
+
+### *tenv*
+
+| OS | 手順 |
+| --- | --- |
+| Windows (Git for Windows) | `TENV_V` を最新版にして [Windows の手順 1・2](#1-tenv-terraformバージョンマネージャーリリースバイナリダウンロード) を再実行 (既存ファイルは上書き) |
+| Mac | `brew upgrade tenv` |
+| Linux | `sudo dnf upgrade -y tenv` |
+
+### *Terraform*
+
+- *tenv* で最新版を追加インストールし、使用するバージョンを切り替えます (全 OS 共通)
+
+```bash
+tenv tf install latest
+tenv tf use latest
+tenv tf list # 旧バージョンも残るため、不要なら tenv tf uninstall <バージョン> で削除
+```
+
+### *Terraform TUI*
+
+| OS | 手順 |
+| --- | --- |
+| Windows (Git for Windows) / Linux | `uv tool upgrade tftui` |
+| Mac | `brew upgrade tftui` |
+
+### *TFLint*
+
+| OS | 手順 |
+| --- | --- |
+| Windows (Git for Windows) | `winget upgrade -e --id TerraformLinters.tflint` |
+| Mac | `brew upgrade --cask tflint` |
+| Linux | [Linux の手順 1〜3](#1-tflint-リリースバイナリダウンロード) を再実行 (最新版をダウンロードし、チェックサム検証後に上書き) |
+
+> [!NOTE]
+> - *TFLint* のプラグイン ( `tflint-ruleset-aws` 等) は `.tflint.hcl` の `version` で固定しているため、更新する場合は `version` を書き換えて `tflint --init` を再実行してください
 
 ## 参考資料
 

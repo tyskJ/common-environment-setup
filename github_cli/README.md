@@ -10,6 +10,7 @@
 
 - [Windows](#windows)
 - [Mac](#mac)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows
@@ -37,6 +38,16 @@ brew install gh
 
 > [!NOTE]
 > - `gh --version` でバージョンが表示されればOKです
+
+## バージョンアップ
+
+| OS | 手順 |
+| --- | --- |
+| Windows | [GitHub CLI](https://cli.github.com/) から最新版のインストーラをダウンロードし、 [Windows の手順 2](#2-インストーラ実行) と同様に実行 (上書きインストール) |
+| Mac | `brew upgrade gh` |
+
+> [!NOTE]
+> - 新しいバージョンがある場合、 `gh` 実行時に更新を促すメッセージが表示されます
 
 ## 参考資料
 

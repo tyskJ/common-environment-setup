@@ -10,6 +10,7 @@
 
 - [Windows](#windows)
 - [バージョンアップ時の注意](#バージョンアップ時の注意)
+- [PIM と Python のバージョンアップ](#pim-と-python-のバージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows
@@ -66,6 +67,25 @@ SystemPropertiesAdvanced
 > ```
 >
 > - バージョン番号は例です。 `py list` でインストール済みのバージョンを確認できます
+
+## PIM と Python のバージョンアップ
+
+### *PIM* ( `py` コマンド)
+
+- [公式](https://www.python.org/downloads/windows/) から最新のインストーラーをダウンロードし、 [手順 1](#1-pim-インストール) と同様に実行します
+
+> [!NOTE]
+> - *Microsoft Store* 版の *PIM* は自動で更新されます
+
+### *Python* (パッチバージョン)
+
+```powershell
+py install --update # インストール済みの Python を、同じマイナーバージョンの新しいリリースに更新
+```
+
+> [!NOTE]
+> - 3.14 → 3.15 のようなマイナーバージョンの変更は、 [バージョンアップ時の注意](#バージョンアップ時の注意) を参照してください
+> - 更新時、グローバルにインストールしたパッケージは削除されますが、 `site-packages` と `Scripts` は残ります
 
 ## 参考資料
 

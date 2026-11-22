@@ -15,6 +15,7 @@
 - [exclude-newer 設定](#exclude-newer-設定)
 - [パッケージ / ツールのインストール](#パッケージ--ツールのインストール)
 - [Pythonエラー解消](#pythonエラー解消)
+- [uv 自体のバージョンアップ](#uv-自体のバージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows (Git for Windows)
@@ -232,6 +233,18 @@ source ~/.bashrc
 > - 例えば *AWS CLI* では、 `aws cloudformation package` 実行時の yaml ファイル出力でエラーが発生します
 > - 環境変数 `PYTHONUTF8=1` で *UTF-8 モード* を有効化し、 *Python3* の既定の文字コードを *UTF-8* にします
 > - *Python3.15* 以降は *UTF-8 モード* が既定で有効になる予定です ( *PEP 686* )
+
+## uv 自体のバージョンアップ
+
+| OS | 手順 |
+| --- | --- |
+| Windows (Git for Windows) | `winget upgrade --id=astral-sh.uv -e` |
+| Mac | `brew upgrade uv` |
+| Linux | `uv self update` |
+
+> [!NOTE]
+> - `uv self update` はインストールスクリプト ( `curl -LsSf https://astral.sh/uv/install.sh | sh` ) でインストールした場合のみ使えます
+> - Homebrew / winget などでインストールした場合は self update が無効になっているため、そのパッケージマネージャーで更新してください
 
 ## 参考資料
 

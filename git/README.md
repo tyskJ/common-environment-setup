@@ -14,6 +14,7 @@
 - [Must](#must)
 - [Option](#option)
 - [Credentials](#credentials)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows
@@ -99,6 +100,22 @@ git config --show-origin --get credential.helper  # 設定ファイル場所確�
 ```
 
 → 設定ファイルを開き、 `credential.helper=osxkeychain` と記載のある行をコメントアウトし保存
+
+## バージョンアップ
+
+### Windows
+
+```bash
+git update-git-for-windows
+```
+
+> [!NOTE]
+> - 新しいバージョンがあればダウンロード・インストールを案内してくれます (インストール時に自動更新を有効にしていなくても実行可能)
+> - `git config --global` で設定した内容 ( `~/.gitconfig` ) はそのまま引き継がれます
+
+### Mac
+
+- OS 標準の *Git* ( *Xcode Command Line Tools* ) は、 macOS のソフトウェアアップデートで更新されます
 
 ## 参考資料
 

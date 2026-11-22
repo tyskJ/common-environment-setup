@@ -13,6 +13,7 @@
 - [Linux](#linux)
 - [Config ( ~/.config/mise/config.toml )](#config--configmiseconfigtoml-)
 - [ツールのバージョンアップ](#ツールのバージョンアップ)
+- [mise 自体のバージョンアップ](#mise-自体のバージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows (Git for Windows)
@@ -104,6 +105,18 @@ mise ls         # 更新後のバージョンを確認
 > - *pnpm* を更新した場合は、 `which -a pnpm` の先頭が *mise* の *pnpm* になっていることを確認してください
 >   - `~/Library/pnpm/bin/pnpm` が先頭の場合、 `pnpm setup` が追加した古い *pnpm* が使われているため、 [pnpm の手順](../node_package_manager/README.md#mac) の `pnpm remove -g pnpm` を実行してください
 > - *pnpm* のメジャーバージョンが上がった場合は、 [メジャーバージョンアップ時の注意](../node_package_manager/README.md#メジャーバージョンアップ時の注意) も参照してください
+
+## mise 自体のバージョンアップ
+
+| OS | 手順 |
+| --- | --- |
+| Windows (Git for Windows) | `winget upgrade jdx.mise` |
+| Mac | `brew upgrade mise` |
+| Linux | `mise self-update` |
+
+> [!NOTE]
+> - `mise self-update` は `curl https://mise.run | sh` でインストールした場合のみ使えます
+> - Homebrew / winget などのパッケージマネージャーでインストールした場合は、そのパッケージマネージャーで更新してください
 
 ## 参考資料
 

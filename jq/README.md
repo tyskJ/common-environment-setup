@@ -9,6 +9,7 @@
 ## 目次
 
 - [Windows (Git for Windows)](#windows-git-for-windows)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows (Git for Windows)
@@ -37,6 +38,13 @@ source ~/.bashrc
 
 > [!NOTE]
 > - `jq --version` でバージョンが表示されればOKです
+
+## バージョンアップ
+
+- [Windows の手順 1・2](#1-jq-リソースバイナリダウンロード) を再実行すると、最新版で `~/jq/jq.exe` が上書きされます
+
+> [!NOTE]
+> - ダウンロード URL が最新版 ( `releases/latest` ) を指しているため、そのまま再実行すれば最新版になります
 
 ## 参考資料
 

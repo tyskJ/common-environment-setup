@@ -12,6 +12,7 @@
 - [Windows (Git for Windows)](#windows-git-for-windows)
 - [Mac](#mac)
 - [Linux](#linux)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows (Git for Windows)
@@ -78,6 +79,17 @@ source ~/.bashrc
 
 > [!NOTE]
 > - `cfn-guard --version` でバージョンが表示されればOKです
+
+## バージョンアップ
+
+| OS | 手順 |
+| --- | --- |
+| Windows (Git for Windows) | [Windows の手順 1・2](#1-cfn-guard-リソースバイナリダウンロード) を再実行 (最新版をダウンロードし、既存ファイルを上書き) |
+| Mac | `brew upgrade cloudformation-guard` |
+| Linux | [Linux の手順 1・2](#1-cfn-guard-リソースバイナリダウンロード-1) を再実行 (最新版をダウンロードし、既存ファイルを上書き) |
+
+> [!NOTE]
+> - Windows / Linux の手順はダウンロード URL が最新版 ( `releases/latest` ) を指しているため、そのまま再実行すれば最新版になります
 
 ## 参考資料
 

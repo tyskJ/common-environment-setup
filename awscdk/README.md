@@ -12,6 +12,7 @@
 - [Windows (Git for Windows)](#windows-git-for-windows)
 - [Mac](#mac)
 - [初期作業 - Typescript](#初期作業---typescript)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows (Git for Windows)
@@ -88,6 +89,19 @@ cdk bootstrap
 
 > [!NOTE]
 > - プロジェクトフォルダ直下で実施すること
+
+## バージョンアップ
+
+- *pnpm* でグローバルインストールしているため、 *pnpm* で更新します (全 OS 共通)
+
+```bash
+pnpm update -g --latest typescript aws-cdk # --latest: package.json の範囲指定を超えて最新版に更新
+pnpm ls -g                                 # 更新後のバージョンを確認
+```
+
+> [!NOTE]
+> - *pnpm* の `minimumReleaseAge` が適用されるため、公開直後のバージョンは対象外になります
+> - *pnpm* 自体のメジャーバージョンアップ後に `pnpm ls -g` に表示されない場合は、 [pnpm のメジャーバージョンアップ時の注意](../node_package_manager/README.md#メジャーバージョンアップ時の注意) を参照してください
 
 ## 参考資料
 
