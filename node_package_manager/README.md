@@ -77,7 +77,7 @@ rm -f ~/Library/pnpm/bin/{pn,pnpx,pnx}    # 削除した pnpm 本体を呼び出
 > - 実行しないと `pnpm install -g` が `ERR_PNPM_NO_GLOBAL_BIN_DIR` で失敗します
 > - Windows / Linux はインストールスクリプトの中で自動実行されますが、 *mise* でインストールした場合は実行されないため手動で実行します
 > - 追記された設定は `source ~/.zshrc` またはターミナルの再起動で反映されます
-> - `pnpm setup` は、実行中の *pnpm* 本体 ( *mise* の `~/.local/share/mise/installs/pnpm/<バージョン>` ) へのリンクを `$PNPM_HOME/bin/pnpm` として追加します。 `$PNPM_HOME/bin` は PATH の先頭にあるため、そのままだと *mise* で *pnpm* をバージョンアップしても古いバージョンが使われ続けます (旧バージョンを `mise prune` 等で削除すると `pnpm` が動かなくなります) 。そのため `pnpm remove -g pnpm` で削除しています
+> - `pnpm setup` は、実行中の *pnpm* 本体 ( *mise* の `~/.local/share/mise/installs/pnpm/<バージョン>` ) をグローバルパッケージとしてコピーし、 `$PNPM_HOME/bin/pnpm` を作成します。 `$PNPM_HOME/bin` は PATH の先頭にあるため、そのままだと *mise* で *pnpm* をバージョンアップしても、コピーした古いバージョンが使われ続けます。そのため `pnpm remove -g pnpm` で削除しています
 > - `which -a pnpm` の先頭が *mise* の *pnpm* になっていればOKです
 
 > [!TIP]
