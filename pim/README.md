@@ -10,6 +10,7 @@
 > - *Python* をインストールする手段 ( [pyenv](../pyenv_python3/README.md) / [PIM](../pim/README.md) / [uv](../uv_python3/README.md) ) はどれか 1 つに統一してください
 > - いずれも `python` / `python3` コマンドを作成するため、併用すると PATH の順番によって使われる *Python* が変わり、パッケージのインストール先も意図しない *Python* になることがあります
 > - 現在使われている *Python* は `which -a python3` (Windows の *PowerShell* では `Get-Command python -All` ) で確認できます
+> - OS 標準の *Python* ( Mac / Linux の `/usr/bin/python3` ) は、 OS や `dnf` 等のシステムツールが使用しているため削除しないでください ( *pyenv* / *uv* の *Python* は PATH の先頭に追加されるため、残っていても問題ありません)
 
 ## 目次
 
