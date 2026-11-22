@@ -5,6 +5,8 @@
 > [!NOTE]
 > - *Makefile* に定義したタスクを実行するビルド自動化ツール
 > - 定型コマンドをタスクとしてまとめ、短いコマンドで実行するために使用
+> - Mac は *Xcode Command Line Tools* に `/usr/bin/make` が含まれているため、本手順は不要です (未インストールの場合は `xcode-select --install` を実行)
+> - Linux はディストリビューションのパッケージマネージャーでインストールしてください (例: `sudo dnf install -y make` )
 
 ## 目次
 

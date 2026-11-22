@@ -20,6 +20,10 @@
 brew install cfn-lint
 ```
 
+> [!TIP]
+> - *pip* / *uv* ( `uv tool install cfn-lint` ) でもインストール可能です
+> - `brew` と併用すると `cfn-lint` が 2 つになり、 PATH の順番で使われる方 (VSCode 拡張機能が使う方) が変わるため、どちらか一方にしてください
+
 ## バージョンアップ
 
 ```zsh
