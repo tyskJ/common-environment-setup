@@ -10,6 +10,7 @@
 
 - [Windows](#windows)
 - [Mac](#mac)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows
@@ -63,6 +64,30 @@ aws = { version = "latest", symlink_bins = "true" }
 >   - macOS は大文字小文字を区別しないため、 `python` コマンドが *AWS CLI* 同梱の `Python` に解決され、 *uv* や *pyenv* でインストールした *Python* より優先される
 >   - *uv* 等でインストールした同名バージョンの `python3.x` と衝突する
 >   - 不要なコマンドが補完候補に表示される
+
+## バージョンアップ
+
+### Windows
+
+- *PowerShell* を管理者権限で起動し、以下のコマンドを実行
+
+```powershell
+aws update
+```
+
+> [!NOTE]
+> - `aws update` は *AWS CLI* 2.36.0 以降で、インストールスクリプトや公式インストーラ (MSI) でインストールした場合に使えます
+> - 全ユーザー向けにインストールしている場合は、管理者権限での実行が必要です
+> - 2.36.0 より前のバージョンの場合は、 [Windows の手順 1](#1-パッケージサイレントインストール) の `msiexec` を再実行すると最新版に上書きされます
+
+### Mac
+
+```zsh
+mise upgrade aws
+```
+
+> [!WARNING]
+> - *mise* で管理しているため、 `aws update` ではなく `mise upgrade` で更新してください (詳細は [mise のツールのバージョンアップ](../mise-en-place/README.md#ツールのバージョンアップ) を参照)
 
 ## 参考資料
 

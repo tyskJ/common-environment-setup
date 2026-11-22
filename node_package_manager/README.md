@@ -15,6 +15,7 @@
   - [Linux](#linux)
   - [npm / npx 抑止](#npm--npx-抑止)
   - [minimumReleaseAge 設定](#minimumreleaseage-設定)
+  - [バージョンアップ](#バージョンアップ)
   - [メジャーバージョンアップ時の注意](#メジャーバージョンアップ時の注意)
 - [参考資料](#参考資料)
 
@@ -143,6 +144,33 @@ pnpm config set --location=global minimumReleaseAge 10080 # 10080分 = 7日
 > [!NOTE]
 > - `pnpm config list --location=global` で結果を確認できる
 
+### バージョンアップ
+
+#### Windows (Git for Windows) / Linux
+
+```bash
+cd ~                # pnpm のバージョンを固定しているプロジェクトの外で実行する
+pnpm self-update
+pnpm -v
+```
+
+> [!NOTE]
+> - `packageManager` などで *pnpm* のバージョンを固定しているプロジェクト内で実行すると、そのプロジェクトの固定バージョンも書き換わるため、プロジェクトの外で実行します
+
+#### Mac
+
+```zsh
+mise upgrade pnpm
+which -a pnpm       # 先頭が mise の pnpm になっていればOK
+```
+
+> [!WARNING]
+> - `pnpm self-update` は実行しないでください
+> - `pnpm self-update` は新しいバージョンを `PNPM_HOME` に追加するため、 [Mac の手順 2](#2-pnpm-でインストールするバイナリを保存するフォルダのセットアップ) で削除した `$PNPM_HOME/bin/pnpm` が再作成され、 *mise* の *pnpm* より優先されてしまいます
+
+> [!NOTE]
+> - メジャーバージョンが上がった場合は、次の [メジャーバージョンアップ時の注意](#メジャーバージョンアップ時の注意) も実施してください
+
 ### メジャーバージョンアップ時の注意
 
 > [!NOTE]
@@ -185,6 +213,7 @@ pnpm config set --location=global minimumReleaseAge 10080 # 10080分 = 7日
 
 - [インストール - pnpm](https://pnpm.io/ja/installation)
 - [pnpm setup - pnpm](https://pnpm.io/ja/cli/setup)
+- [pnpm self-update - pnpm](https://pnpm.io/cli/self-update)
 - [@pnpm/global.commands (Isolated Global Packages) - GitHub](https://github.com/pnpm/pnpm/blob/main/pnpm11/global/commands/README.md)
 
 ### ブログ

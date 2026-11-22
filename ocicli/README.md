@@ -12,6 +12,7 @@
 - [Mac](#mac)
 - [Linux](#linux)
 - [初回のみ実施](#初回のみ実施)
+- [バージョンアップ](#バージョンアップ)
 - [参考資料](#参考資料)
 
 ## Windows
@@ -129,6 +130,40 @@ cat <<EOF > $HOME/.oci/config
 EOF
 ```
 
+## バージョンアップ
+
+> [!NOTE]
+> - インストールスクリプトは *OCI CLI* を仮想環境 ( `~/lib/oracle-cli` ) にインストールしているため、その仮想環境の `pip` で更新します
+> - インストールスクリプトを `--accept-all-defaults` / `-AcceptAllDefaults` 付きで再実行すると、既存のインストール先を削除できず `Refusing to remove existing directory` で終了します (再インストールする場合は、付けずに実行して削除の確認に `Y` で回答してください)
+
+### Windows
+
+```powershell
+& "$env:USERPROFILE\lib\oracle-cli\Scripts\pip.exe" install oci-cli --upgrade
+```
+
+> [!NOTE]
+> - 先頭の `&` は *PowerShell* の呼び出し演算子で、 `"..."` で囲んだ文字列 (パス) をコマンドとして実行するために付けています
+> - `&` を付けないと、文字列として表示されるだけで実行されません
+
+### Mac
+
+```zsh
+mise upgrade oci
+```
+
+> [!NOTE]
+> - 詳細は [mise のツールのバージョンアップ](../mise-en-place/README.md#ツールのバージョンアップ) を参照
+
+### Linux
+
+```bash
+~/lib/oracle-cli/bin/pip install oci-cli --upgrade
+```
+
+> [!NOTE]
+> - `oci -v` でバージョンが上がっていればOKです
+
 ## 参考資料
 
 ### リファレンス
@@ -138,4 +173,5 @@ EOF
 - [Oracle Cloud Infrastructure CLI Command Reference](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.96.3/oci_cli_docs/)
 - [クイックスタート - Oracle Cloud Infrastructureドキュメント](https://docs.oracle.com/ja-jp/iaas/Content/API/SDKDocs/cliinstall.htm)
 - [手動およびオフライン・インストール - Oracle Cloud Infrastructureドキュメント](https://docs.oracle.com/ja-jp/iaas/Content/API/SDKDocs/climanualinst.htm)
+- [CLIのアップグレード - Oracle Cloud Infrastructureドキュメント](https://docs.oracle.com/ja-jp/iaas/Content/API/SDKDocs/cliupgrading.htm)
 - [Registry setting to enable long paths - Windows App Development](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#registry-setting-to-enable-long-paths)
