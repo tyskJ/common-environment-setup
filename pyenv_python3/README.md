@@ -37,10 +37,10 @@ source ~/.bashrc
 > - `pyenv --version` で *pyenv* のバージョン確認が可能
 > - バージョン確認時にWindows環境変数への登録を促す文言が表示され気になる方はPowershell で登録してください
 
-### 3. *python3.13* インストール
+### 3. *python3.14* インストール
 
 ```bash
-pyenv install 3.13.0
+pyenv install 3.14.10
 ```
 
 > [!NOTE]
@@ -50,7 +50,7 @@ pyenv install 3.13.0
 ### 4. *Global* 設定
 
 ```bash
-pyenv global 3.13.0
+pyenv global 3.14.10
 ```
 
 > [!NOTE]
@@ -81,10 +81,10 @@ echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### 4. *python3.13* インストール
+### 4. *python3.14* インストール
 
 ```bash
-pyenv install 3.13.0
+pyenv install 3.14.10
 ```
 
 > [!NOTE]
@@ -94,7 +94,7 @@ pyenv install 3.13.0
 ### 5. *Global* 設定
 
 ```bash
-pyenv global 3.13.0
+pyenv global 3.14.10
 ```
 
 > [!NOTE]

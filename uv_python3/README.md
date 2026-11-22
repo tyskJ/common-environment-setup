@@ -37,10 +37,10 @@ winget install --id=astral-sh.uv -e --accept-source-agreements --accept-package-
 > powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 > ```
 
-### 2. *python3.13* インストール
+### 2. *python3.14* インストール
 
 ```bash
-uv python install 3.13 --default
+uv python install 3.14 --default
 ```
 
 > [!NOTE]
@@ -80,10 +80,10 @@ brew install uv
 > [!NOTE]
 > - `uv --version` でバージョンが表示されればOKです
 
-### 2. *python3.13* インストール
+### 2. *python3.14* インストール
 
 ```zsh
-uv python install 3.13 --default
+uv python install 3.14 --default
 ```
 
 > [!NOTE]
@@ -127,10 +127,10 @@ source $HOME/.local/bin/env
 > - インストーラが `~/.local/bin` に *uv* を配置し、シェルのプロファイルに PATH を追記します
 > - `uv --version` でバージョンが表示されればOKです
 
-### 2. *python3.13* インストール
+### 2. *python3.14* インストール
 
 ```bash
-uv python install 3.13 --default
+uv python install 3.14 --default
 ```
 
 > [!NOTE]
