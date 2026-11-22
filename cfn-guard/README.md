@@ -1,0 +1,88 @@
+![](./docs/assets/samune.png)
+
+# CloudFormation Guard インストール手順
+
+> [!NOTE]
+> - AWS が開発している Policy as Code ツール
+> - 「S3 バケットは暗号化必須」などのルールを独自の DSL で記述し、*CloudFormation* テンプレート (JSON / YAML) がルールに準拠しているかを検証するために使用
+> - 構文・プロパティの検証は [CloudFormation Linter](../cfn-lint)、組織のポリシーへの準拠チェックは *cfn-guard* と使い分ける
+
+## 目次
+
+- [Windows (Git for Windows)](#windows-git-for-windows)
+- [Mac](#mac)
+- [Linux](#linux)
+- [参考資料](#参考資料)
+
+## Windows (Git for Windows)
+
+### 1. *cfn-guard* リソースバイナリダウンロード
+
+- [GitHub release page](https://github.com/aws-cloudformation/cloudformation-guard/releases) から最新の64bit版バイナリ( *cfn-guard-v3-x86_64-windows-latest.tar.gz* )をダウンロード
+
+```bash
+curl -o ~/Downloads/#1 -OL https://github.com/aws-cloudformation/cloudformation-guard/releases/latest/download/{cfn-guard-v3-x86_64-windows-latest.tar.gz}
+```
+
+### 2. バイナリデータを任意のフォルダに解凍
+
+```bash
+tar -xzf ~/Downloads/cfn-guard-v3-x86_64-windows-latest.tar.gz -C ~/
+rm -f ~/Downloads/cfn-guard-v3-x86_64-windows-latest.tar.gz
+```
+
+### 3. ディレクトリにPATHを通す
+
+```bash
+touch ~/.bashrc # .bashrcがない場合実行
+sed -i '$aexport PATH=$PATH:$HOME/cfn-guard-v3-x86_64-windows-latest' ~/.bashrc
+source ~/.bashrc
+```
+
+> [!NOTE]
+> - `cfn-guard --version` でバージョンが表示されればOKです
+
+## Mac
+
+### 1. *cfn-guard* インストール
+
+```zsh
+brew install cloudformation-guard
+```
+
+> [!NOTE]
+> - `cfn-guard --version` でバージョンが表示されればOKです
+
+## Linux
+
+### 1. *cfn-guard* リソースバイナリダウンロード
+
+- [GitHub release page](https://github.com/aws-cloudformation/cloudformation-guard/releases) から最新の64bit版バイナリ( *cfn-guard-v3-x86_64-linux-latest.tar.gz* )をダウンロード
+
+```bash
+curl -OL https://github.com/aws-cloudformation/cloudformation-guard/releases/latest/download/cfn-guard-v3-x86_64-linux-latest.tar.gz
+```
+
+### 2. バイナリデータを任意のフォルダに解凍
+
+```bash
+tar -xzf cfn-guard-v3-x86_64-linux-latest.tar.gz
+mkdir -p ~/bin; mv cfn-guard-v3-x86_64-linux-latest/cfn-guard ~/bin/; rm -rf cfn-guard-v3-x86_64-linux-latest*
+```
+
+### 3. ディレクトリにPATHを通す
+
+```bash
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+> [!NOTE]
+> - `cfn-guard --version` でバージョンが表示されればOKです
+
+## 参考資料
+
+### リファレンス
+
+- [GitHub - aws-cloudformation/cloudformation-guard](https://github.com/aws-cloudformation/cloudformation-guard)
+- [AWS CloudFormation Guard とは - AWS CloudFormation Guard ユーザーガイド](https://docs.aws.amazon.com/ja_jp/cfn-guard/latest/ug/what-is-guard.html)
