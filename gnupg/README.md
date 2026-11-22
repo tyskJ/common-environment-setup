@@ -36,6 +36,32 @@ curl -o ~/Downloads/#1 -OL https://files.gpg4win.org/{gpg4win-latest.exe}  # {} 
 > [!NOTE]
 > - デフォルト設定で問題ありません。
 
+### 3. *Git* で使う *GnuPG* を *Gpg4win* に揃える
+
+- *Gpg4win* をインストールすると、 *Git for Windows* 同梱の *GnuPG* と合わせて `gpg` が 2 つになり、鍵の保存先も別々になります
+
+| *GnuPG* | 使われる場面 | 鍵の保存先 |
+| --- | --- | --- |
+| *Git for Windows* 同梱 | *Git Bash* の `gpg` / *Git* のコミット署名 (デフォルト) | `~/.gnupg` |
+| *Gpg4win* | *PowerShell* / *Kleopatra* | `%APPDATA%\gnupg` |
+
+- このままだと *Kleopatra* 等で作成した鍵が *Git* から見えず、コミット署名に失敗するため、 *Git* が使う `gpg` を *Gpg4win* のものに揃えます
+- *PowerShell* で以下を実行し、 *Gpg4win* の `gpg.exe` のパスを確認
+
+```powershell
+where.exe gpg # 例: C:\Program Files\GnuPG\bin\gpg.exe (Gpg4win のバージョンにより C:\Program Files (x86)\GnuPG\bin\gpg.exe)
+```
+
+- 確認したパスを *Git* に設定
+
+```bash
+git config --global gpg.program "C:/Program Files/GnuPG/bin/gpg.exe" # 上で確認したパスに置き換え (区切りは / )
+```
+
+> [!NOTE]
+> - `git config --global gpg.program` で設定内容を確認できます
+> - *Git Bash* の `gpg` で作成済みの鍵がある場合は、 `gpg --export-secret-keys -a <鍵ID> > key.asc` で書き出し、 *Kleopatra* または *PowerShell* の `gpg --import key.asc` で取り込んでください (取り込み後は `key.asc` を削除)
+
 ## バージョンアップ
 
 - [Windows の手順 1・2](#1-gnupg-バイナリデータダウンロード) を再実行し、最新版のインストーラで上書きインストールします
