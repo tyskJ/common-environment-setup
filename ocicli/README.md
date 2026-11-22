@@ -132,7 +132,7 @@ EOF
 
 - [コマンドライン・インタフェース(CLI) - Oracle Cloud Infrastructureドキュメント](https://docs.oracle.com/ja-jp/iaas/Content/API/Concepts/cliconcepts.htm)
 - [oci-cli - GitHub](https://github.com/oracle/oci-cli)
-- [Oracle Cloud Infrastructure CLI Command Reference](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.70.1/oci_cli_docs/)
+- [Oracle Cloud Infrastructure CLI Command Reference](https://docs.oracle.com/en-us/iaas/tools/oci-cli/3.96.3/oci_cli_docs/)
 - [クイックスタート - Oracle Cloud Infrastructureドキュメント](https://docs.oracle.com/ja-jp/iaas/Content/API/SDKDocs/cliinstall.htm)
 - [手動およびオフライン・インストール - Oracle Cloud Infrastructureドキュメント](https://docs.oracle.com/ja-jp/iaas/Content/API/SDKDocs/climanualinst.htm)
 - [Registry setting to enable long paths - Windows App Development](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=powershell#registry-setting-to-enable-long-paths)

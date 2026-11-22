@@ -9,7 +9,7 @@
 > - 公式の想定どおり、グローバルではなく記事を管理するディレクトリ(プロジェクト)にローカルインストールします
 >   - `package.json` にバージョンが固定されるため、別の PC でも `pnpm install` だけで同じ環境を再現できます
 > - 事前に _Node.js_ ( [こちら](../node_version_manager/README.md) ) と _pnpm_ ( [こちら](../node_package_manager/README.md) ) をセットアップしてください
->   - _Node.js_ は **22.22.1 以上** が必要です ( `@qiita/qiita-cli` v1.10.0 時点)
+>   - _Node.js_ は **22.22.1 以上** が必要です ( `@qiita/qiita-cli` v1.13.0 時点)
 > - 公式手順は _npm_ / _npx_ ですが、本手順では _pnpm_ を使用します
 >   - _pnpm_ の `minimumReleaseAge` で公開直後のパッケージを除外でき、サプライチェーン攻撃対策になるため (詳細は [こちら](../node_package_manager/README.md) )
 >   - 公式手順の `npm install ...` は `pnpm add ...` に、 `npx qiita ...` は `pnpm exec qiita ...` に読み替えています
