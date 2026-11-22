@@ -32,6 +32,10 @@
 git clone https://github.com/pyenv-win/pyenv-win.git "$HOME/.pyenv"
 ```
 
+> [!WARNING]
+> - Windows には、 `python` / `python3` と入力すると *Microsoft Store* を開くだけのコマンド (アプリ実行エイリアス) が標準で用意されています
+> - これが優先されると *Python* が起動せず *Store* が開くため、「スタート」→「アプリ実行エイリアスの管理」で、 **アプリ インストーラー** の `python.exe` / `python3.exe` をオフにしてください
+
 ### 2. ディレクトリにPATHを通す
 
 ```bash

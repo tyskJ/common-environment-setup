@@ -49,6 +49,10 @@ winget install --id=astral-sh.uv -e --accept-source-agreements --accept-package-
 uv python install 3.14 --default
 ```
 
+> [!WARNING]
+> - Windows には、 `python` / `python3` と入力すると *Microsoft Store* を開くだけのコマンド (アプリ実行エイリアス) が標準で用意されています
+> - これが優先されると *Python* が起動せず *Store* が開くため、「スタート」→「アプリ実行エイリアスの管理」で、 **アプリ インストーラー** の `python.exe` / `python3.exe` をオフにしてください
+
 > [!NOTE]
 > - `--default` を付けると、 `python` / `python3` コマンドも `~/.local/bin` に配置されます ( *experimental* な機能です)
 > - バージョンを省略した場合、インストールされるバージョンは以下の優先順で決まります
