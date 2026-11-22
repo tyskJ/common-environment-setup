@@ -79,11 +79,12 @@ nvm use --lts
 ### 1. `nvm` インストール
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+NVM_V=v0.41.0
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_V}/install.sh | bash
 ```
 
 > [!NOTE]
-> バージョンは実行時の最新に合わせてください
+> - `NVM_V` は実行時の最新バージョンに合わせてください ( [Releases](https://github.com/nvm-sh/nvm/releases) で確認できます)
 
 ### 2. `profile` 追加
 

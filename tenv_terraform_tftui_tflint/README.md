@@ -22,21 +22,23 @@
 
 ### 1. *tenv* (Terraformバージョンマネージャー)リリースバイナリダウンロード
 
-- [GitHub](https://github.com/tofuutils/tenv/releases) から64bit版バイナリ( *tenv_v4.1.0_Windows_x86_64.zip* )をダウンロード
+- [GitHub](https://github.com/tofuutils/tenv/releases) から64bit版バイナリ( *tenv_v4.16.9_Windows_x86_64.zip* )をダウンロード
+
+```bash
+TENV_V=v4.16.9
+curl -o ~/Downloads/#1 -OL https://github.com/tofuutils/tenv/releases/download/${TENV_V}/{tenv_${TENV_V}_Windows_x86_64.zip}
+```
 
 > [!NOTE]
-> バージョンはインストールする値に修正してください
+> - `TENV_V` は実行時の最新バージョンに合わせてください
 
 ### 2. バイナリデータを任意のフォルダに解凍
 
 ```bash
 mkdir -p ~/tofuutils/tenv/
-unzip -d ~/tofuutils/tenv/ ~/Downloads/tenv_v4.1.0_Windows_x86_64.zip
-rm ~/Downloads/tenv_v4.1.0_Windows_x86_64.zip
+unzip -d ~/tofuutils/tenv/ ~/Downloads/tenv_${TENV_V}_Windows_x86_64.zip
+rm ~/Downloads/tenv_${TENV_V}_Windows_x86_64.zip
 ```
-
-> [!NOTE]
-> バージョンはインストールした値に修正してください
 
 ### 3. ディレクトリにPATHを通す
 
