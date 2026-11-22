@@ -81,6 +81,20 @@ mkdir app && cd app
 cdk init --language typescript --package-manager pnpm
 ```
 
+> [!NOTE]
+> - *pnpm* 11 以降は、許可していない依存パッケージのビルドスクリプト ( `postinstall` 等) を実行しないため、 `cdk init` の最後の `pnpm install` が `ERR_PNPM_IGNORED_BUILDS` で失敗します (サプライチェーン攻撃対策の仕様)
+> - パッケージ自体はインストールされているため、表示されたパッケージのビルドを許可します
+>
+> ```zsh
+> pnpm approve-builds esbuild @swc/core @parcel/watcher # エラーに表示されたパッケージを指定 (引数なしで実行すると対話形式で選択)
+> ```
+>
+> - 許可したパッケージは `pnpm-workspace.yaml` の `allowBuilds` に記録され、その場で再ビルドされます。 `pnpm-workspace.yaml` もコミットしてください
+> - `cdk init` は `pnpm install` が失敗しても最後に `✅ All done!` と表示するため、エラーが出ていないか確認してください
+
+> [!WARNING]
+> - `cdk init` が出力する `README.md` には `npx cdk deploy` などと記載されていますが、本リポジトリの手順では `npx` を止めているため ( [こちら](../node_package_manager/README.md#npm--npx-抑止) ) 、 `pnpm cdk deploy` (または `pnpm exec cdk deploy` ) のように実行してください
+
 ### BootStrap
 
 ```zsh
@@ -107,6 +121,7 @@ pnpm ls -g                                 # 更新後のバージョンを確�
 
 ### リファレンス
 
+- [pnpm approve-builds - pnpm](https://pnpm.io/cli/approve-builds)
 - [AWS CDK で使用する環境をブートストラップする - AWS クラウド開発キット (AWS CDK) v2 デベロッパーガイド](https://docs.aws.amazon.com/ja_jp/cdk/v2/guide/bootstrapping-env.html)
 - [AWS CDK ブートストラップをカスタマイズする - AWS クラウド開発キット (AWS CDK) v2 デベロッパーガイド](https://docs.aws.amazon.com/ja_jp/cdk/v2/guide/bootstrapping-customizing.html)
 
