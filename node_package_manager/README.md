@@ -24,6 +24,11 @@
 > [!NOTE]
 > - `minimumReleaseAge` で公開直後のパッケージを除外でき、サプライチェーン攻撃対策になるため *npm* / *npx* の代わりに使用
 
+> [!WARNING]
+> - *Node.js* 24 以前には *Corepack* が同梱されていますが、 `corepack enable` は実行しないでください
+> - 実行すると *Node.js* 側に `pnpm` コマンドが作成され、本手順でインストールした `pnpm` と重複し、 PATH の順番で使われる方が変わります
+> - *Corepack* は *Node.js* 25 以降には同梱されていません
+
 ### Windows (Git for Windows)
 
 #### 1. `pnpm` インストール

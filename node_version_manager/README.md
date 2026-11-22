@@ -23,7 +23,12 @@
 
 ### 1. `nvm-windows` ( Windows版 `Node.js` バージョンマネージャー)インストール
 
-- [GitHub](https://github.com/coreybutler/nvm-windows) から *nvm-setup.exe* をダウンロード
+> [!WARNING]
+> - 公式インストーラ等で *Node.js* を既にインストールしている場合は、 *nvm-windows* のインストール前にアンインストールし、 `C:\Program Files\nodejs` が残っていれば削除してください
+> - システムの PATH にある *Node.js* は *nvm-windows* より優先されるため、残っていると `nvm use` で切り替えても古い *Node.js* が使われ続けます
+> - v2 のインストーラは既存の *Node.js* を検出すると扱いを選ばせます ( `Copy` / `Adopt` / `Keep` / `Drop` ) 。 `Keep` を選ぶと既存の *Node.js* が残って優先されるため、既定の `Copy` (nvm 側へコピーして既存をアンインストール) を選んでください
+
+- [GitHub](https://github.com/coreybutler/nvm-windows) から *nvm-<バージョン>-x64-setup.exe* をダウンロード
 - デフォルト設定でインストール
 
 ### 2. `node.js` (LTS版) インストール
