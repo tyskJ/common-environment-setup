@@ -6,6 +6,11 @@
 > - python.org が提供する Windows 向けの公式 *Python* インストーラー兼バージョン管理ツール ( `py` コマンド)
 > - Windows で、公式の方法により *Python* の複数バージョンを管理するために使用
 
+> [!WARNING]
+> - *Python* をインストールする手段 ( [pyenv](../pyenv_python3/README.md) / [PIM](../pim/README.md) / [uv](../uv_python3/README.md) ) はどれか 1 つに統一してください
+> - いずれも `python` / `python3` コマンドを作成するため、併用すると PATH の順番によって使われる *Python* が変わり、パッケージのインストール先も意図しない *Python* になることがあります
+> - 現在使われている *Python* は `which -a python3` (Windows の *PowerShell* では `Get-Command python -All` ) で確認できます
+
 ## 目次
 
 - [Windows](#windows)

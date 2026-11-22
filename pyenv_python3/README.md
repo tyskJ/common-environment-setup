@@ -7,6 +7,11 @@
 > - プロジェクトごとに *Python* のバージョンを使い分けるために使用
 > - パッケージ管理まで含めて統一する場合は [uv / Python3](../uv_python3/README.md) を参照
 
+> [!WARNING]
+> - *Python* をインストールする手段 ( [pyenv](../pyenv_python3/README.md) / [PIM](../pim/README.md) / [uv](../uv_python3/README.md) ) はどれか 1 つに統一してください
+> - いずれも `python` / `python3` コマンドを作成するため、併用すると PATH の順番によって使われる *Python* が変わり、パッケージのインストール先も意図しない *Python* になることがあります
+> - 現在使われている *Python* は `which -a python3` (Windows の *PowerShell* では `Get-Command python -All` ) で確認できます
+
 ## 目次
 
 - [Windows (Git for Windows)](#windows-git-for-windows)

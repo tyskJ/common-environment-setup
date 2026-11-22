@@ -7,6 +7,11 @@
 > - *Python* 本体のインストールやバージョン管理、仮想環境の作成も含め、 *pip* / *pyenv* / *venv* の役割をまとめて担う
 > - `exclude-newer` で公開直後のパッケージを除外でき、サプライチェーン攻撃対策になるため使用
 
+> [!WARNING]
+> - *Python* をインストールする手段 ( [pyenv](../pyenv_python3/README.md) / [PIM](../pim/README.md) / [uv](../uv_python3/README.md) ) はどれか 1 つに統一してください
+> - いずれも `python` / `python3` コマンドを作成するため、併用すると PATH の順番によって使われる *Python* が変わり、パッケージのインストール先も意図しない *Python* になることがあります
+> - 現在使われている *Python* は `which -a python3` (Windows の *PowerShell* では `Get-Command python -All` ) で確認できます
+
 ## 目次
 
 - [Windows (Git for Windows)](#windows-git-for-windows)
@@ -183,6 +188,7 @@ EOF
 
 - *uv* でインストールした *Python* は *uv* の管理下にあるため、 `pip install` によるインストールは拒否されます
 - また、 `pip` 経由では `exclude-newer` 設定が適用されないため、 *pip* ではなく *uv* のコマンドを使用してください
+- *uv* は `pip` / `pip3` コマンドを作成しないため、 `pip3` を実行すると *uv* 以外の *Python* ( Homebrew や OS 標準の *Python* など) の *pip* が使われます。誤って別の *Python* にインストールしないよう注意してください
 
 | 用途 | コマンド |
 | --- | --- |
