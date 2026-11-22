@@ -31,7 +31,7 @@
 
 ```bash
 RAIN_V=v1.24.4
-curl -o ~/Downloads/#1 -OL https://github.com/aws-cloudformation/rain/releases/download/${RAIN_V}/{rain-${RAIN_V}_windows-amd64.zip}
+curl -o ~/Downloads/#1 -OL https://github.com/aws-cloudformation/rain/releases/download/${RAIN_V}/{rain-${RAIN_V}_windows-amd64.zip}  # {} で囲んだファイル名を #1 に入れ、~/Downloads に同じファイル名で保存
 ```
 
 ### 2. バイナリデータを任意のフォルダに解凍
@@ -44,9 +44,8 @@ rm -f ~/Downloads/rain-${RAIN_V}_windows-amd64.zip
 ### 3. ディレクトリにPATHを通す
 
 ```bash
-touch ~/.bashrc # .bashrcがない場合実行
-sed -i '$aexport RAIN_V=v1.24.4' ~/.bashrc
-sed -i '$aexport PATH=$PATH:$HOME/rain-${RAIN_V}_windows-amd64' ~/.bashrc
+echo 'export RAIN_V=v1.24.4' >> ~/.bashrc
+echo 'export PATH=$PATH:$HOME/rain-${RAIN_V}_windows-amd64' >> ~/.bashrc
 source ~/.bashrc
 ```
 

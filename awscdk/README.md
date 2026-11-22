@@ -37,9 +37,8 @@ pnpm install -g typescript
 >
 > ```bash
 > # shell
-> export NODE_EXTRA_CA_CERTS=/c/path/to/certificate.pem # 証明書の絶対パスを指定
-> touch ~/.bashrc # .bashrcがない場合実行
-> sed -i '$aexport NODE_EXTRA_CA_CERTS=/c/path/to/certificate.pem' ~/.bashrc
+> echo 'export NODE_EXTRA_CA_CERTS=/c/path/to/certificate.pem' >> ~/.bashrc # 証明書の絶対パスを指定
+> source ~/.bashrc
 > ```
 
 ### 2. *aws-cdk* のグローバルインストール

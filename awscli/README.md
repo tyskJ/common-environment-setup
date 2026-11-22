@@ -19,7 +19,7 @@
 Powershellにて以下コマンドを実行
 
 ```powershell
-msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi /qn
+msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi /qn # /i: インストール / /qn: 画面を表示せずにインストール
 ```
 
 ### 2. インストール確認

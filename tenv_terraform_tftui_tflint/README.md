@@ -26,7 +26,7 @@
 
 ```bash
 TENV_V=v4.16.9
-curl -o ~/Downloads/#1 -OL https://github.com/tofuutils/tenv/releases/download/${TENV_V}/{tenv_${TENV_V}_Windows_x86_64.zip}
+curl -o ~/Downloads/#1 -OL https://github.com/tofuutils/tenv/releases/download/${TENV_V}/{tenv_${TENV_V}_Windows_x86_64.zip}  # {} で囲んだファイル名を #1 に入れ、~/Downloads に同じファイル名で保存
 ```
 
 > [!NOTE]
@@ -43,9 +43,8 @@ rm ~/Downloads/tenv_${TENV_V}_Windows_x86_64.zip
 ### 3. ディレクトリにPATHを通す
 
 ```bash
-export PATH=$PATH:$HOME/tofuutils/tenv/
-touch ~/.bashrc # .bashrcがない場合実行
-sed -i '$aexport PATH=$PATH:$HOME/tofuutils/tenv/' ~/.bashrc
+echo 'export PATH=$PATH:$HOME/tofuutils/tenv/' >> ~/.bashrc
+source ~/.bashrc
 ```
 
 ### 4. *Terraform* 最新版インストール
@@ -99,6 +98,7 @@ tenv tf use latest
 
 ```bash
 cd
+# GitHub API で最新リリースのタグ名 (例: v2.5.0) を取得し、先頭の v を除いてバージョン番号だけにする
 LATEST_VERSION=$(curl https://api.github.com/repos/sigstore/cosign/releases/latest | jq -r .tag_name | tr -d "v")
 curl -O -L "https://github.com/sigstore/cosign/releases/latest/download/cosign-${LATEST_VERSION}-1.x86_64.rpm"
 sudo rpm -ivh cosign-${LATEST_VERSION}-1.x86_64.rpm && rm -rf cosign-${LATEST_VERSION}-1.x86_64.rpm
@@ -107,6 +107,7 @@ sudo rpm -ivh cosign-${LATEST_VERSION}-1.x86_64.rpm && rm -rf cosign-${LATEST_VE
 ### 2. リポジトリ登録
 
 ```bash
+# tenv の dnf リポジトリを登録するスクリプトを取得して実行 (-1: TLS 1.0 以上で通信 / -s: 進捗非表示 / -L: リダイレクト追従 / -f: HTTP エラー時は失敗扱い)
 curl -1sLf 'https://dl.cloudsmith.io/public/tofuutils/tenv/cfg/setup/bash.rpm.sh' | sudo bash
 ```
 

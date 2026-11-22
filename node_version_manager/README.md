@@ -51,8 +51,8 @@ mkdir -p ~/.nvm
 echo '' >> ~/.zshrc
 echo '## nvm' >> ~/.zshrc
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
-echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"' >> ~/.zshrc
-echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zshrc
+echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"' >> ~/.zshrc                                       # nvm.sh があれば読み込む (\. は source と同じ)
+echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"' >> ~/.zshrc # 補完スクリプトがあれば読み込む
 ```
 
 ### 3. `profile` 読み込み
@@ -92,8 +92,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/${NVM_V}/install.sh | bash
 echo '' >> ~/.bashrc
 echo '##nvm' >> ~/.bashrc
 echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bashrc
-echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> ~/.bashrc
-echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >> ~/.bashrc
+echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> ~/.bashrc                   # nvm.sh があれば読み込む (\. は source と同じ)
+echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >> ~/.bashrc # 補完スクリプトがあれば読み込む
 ```
 
 ### 3. `profile` 読み込み

@@ -18,7 +18,7 @@
 - [GitHub](https://github.com/jqlang/jq/releases) から最新の64bit版バイナリ( *jq-windows-amd64.exe* )をダウンロード
 
 ```bash
-curl -o ~/Downloads/#1 -OL https://github.com/jqlang/jq/releases/latest/download/{jq-windows-amd64.exe}
+curl -o ~/Downloads/#1 -OL https://github.com/jqlang/jq/releases/latest/download/{jq-windows-amd64.exe}  # {} で囲んだファイル名を #1 に入れ、~/Downloads に同じファイル名で保存
 ```
 
 ### 2. バイナリを任意のフォルダに配置

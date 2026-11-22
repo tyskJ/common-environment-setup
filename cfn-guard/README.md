@@ -21,7 +21,7 @@
 - [GitHub release page](https://github.com/aws-cloudformation/cloudformation-guard/releases) から最新の64bit版バイナリ( *cfn-guard-v3-x86_64-windows-latest.tar.gz* )をダウンロード
 
 ```bash
-curl -o ~/Downloads/#1 -OL https://github.com/aws-cloudformation/cloudformation-guard/releases/latest/download/{cfn-guard-v3-x86_64-windows-latest.tar.gz}
+curl -o ~/Downloads/#1 -OL https://github.com/aws-cloudformation/cloudformation-guard/releases/latest/download/{cfn-guard-v3-x86_64-windows-latest.tar.gz}  # {} で囲んだファイル名を #1 に入れ、~/Downloads に同じファイル名で保存
 ```
 
 ### 2. バイナリデータを任意のフォルダに解凍
@@ -34,8 +34,7 @@ rm -f ~/Downloads/cfn-guard-v3-x86_64-windows-latest.tar.gz
 ### 3. ディレクトリにPATHを通す
 
 ```bash
-touch ~/.bashrc # .bashrcがない場合実行
-sed -i '$aexport PATH=$PATH:$HOME/cfn-guard-v3-x86_64-windows-latest' ~/.bashrc
+echo 'export PATH=$PATH:$HOME/cfn-guard-v3-x86_64-windows-latest' >> ~/.bashrc
 source ~/.bashrc
 ```
 

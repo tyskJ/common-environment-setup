@@ -32,13 +32,16 @@ HINT: This error might have occurred since this system does not have Windows Lon
 New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
 ```
 
+> [!NOTE]
+> - レジストリの `LongPathsEnabled` を `1` にし、 260 文字を超えるパスを扱えるようにしています ( `-Force` は値が既にある場合に上書き)
+
 ### 2. *OCI CLI* インストール
 
 - *PowerShell* を管理者権限で起動し、以下のコマンドを実行してインストールスクリプトをダウンロード & 実行します
 
 ```powershell
 cd $env:USERPROFILE\Downloads
-Set-ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy RemoteSigned -Scope Process # この PowerShell ウィンドウでのみスクリプト実行を許可 (閉じると元に戻る)
 Invoke-WebRequest https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1 -OutFile install.ps1
 .\install.ps1 -AcceptAllDefaults
 ```

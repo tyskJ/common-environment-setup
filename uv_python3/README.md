@@ -120,7 +120,7 @@ source ~/.zshrc
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
-source $HOME/.local/bin/env
+source $HOME/.local/bin/env # インストーラが作成した PATH 設定を現在のシェルに反映
 ```
 
 > [!NOTE]

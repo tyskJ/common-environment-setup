@@ -76,8 +76,8 @@ curl -fsSL https://pyenv.run | bash
 
 ```bash
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc # pyenv 本体のディレクトリがあれば PATH に追加
+echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc                                     # shims (python コマンドを切り替える仕組み) を有効化
 source ~/.bashrc
 ```
 

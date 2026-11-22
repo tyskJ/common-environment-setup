@@ -22,7 +22,7 @@
 - [Gpg4win](https://www.gpg4win.org/) の配布サーバーから最新のWindows版インストーラ( *gpg4win-latest.exe* )をダウンロード
 
 ```bash
-curl -o ~/Downloads/#1 -OL https://files.gpg4win.org/{gpg4win-latest.exe}
+curl -o ~/Downloads/#1 -OL https://files.gpg4win.org/{gpg4win-latest.exe}  # {} で囲んだファイル名を #1 に入れ、~/Downloads に同じファイル名で保存
 ```
 
 > [!TIP]
