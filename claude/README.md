@@ -29,7 +29,7 @@
 
 > [!WARNING]
 >
-> - 以前 *npm* ( `npm install -g @anthropic-ai/claude-code` ) で Claude Code をインストールしていた場合は、アンインストールしてから本手順でインストールしてください
+> - 以前 _npm_ ( `npm install -g @anthropic-ai/claude-code` ) で Claude Code をインストールしていた場合は、アンインストールしてから本手順でインストールしてください
 > - 残っていると `claude` が 2 つになり、 PATH の順番で使われる方が変わります
 > - 本リポジトリの手順では `npm` をエイリアスで止めているため ( [こちら](../node_package_manager/README.md#npm--npx-抑止) ) 、 `command` を付けてエイリアスを回避して実行します
 >
@@ -46,13 +46,13 @@
 > - Windows 環境では `Git for Windows` のインストールが推奨されています
 > - そのため、 [こちら](../git/README.md) を参考にインストールしてください
 
-#### 1. *Claude Code* インストール
+#### 1. _Claude Code_ インストール
 
 ```powershell
 irm https://claude.ai/install.ps1 | iex
 ```
 
-#### 2. *Git Bash* のパスを環境変数に設定
+#### 2. _Git Bash_ のパスを環境変数に設定
 
 ```powershell
 [System.Environment]::SetEnvironmentVariable(
@@ -83,7 +83,7 @@ if (($userPath -split ';') -notcontains $addPath) {
 
 ### Mac
 
-#### 1. *Claude Code* インストール
+#### 1. _Claude Code_ インストール
 
 ```bash
 curl -fsSL https://claude.ai/install.sh | bash
@@ -98,6 +98,68 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 > [!NOTE]
 >
 > - `claude --version` でバージョンが表示されればOKです
+
+### Linux
+
+> [!NOTE]
+>
+> - 公式ドキュメントのシステム要件に記載されている Linux は Ubuntu 20.04 以降 / Debian 10 以降 / Alpine Linux 3.19 以降です
+> - RHEL / Fedora はシステム要件の一覧にはありませんが、公式の _dnf_ リポジトリが用意されています (後述の TIP を参照)
+> - Amazon Linux は公式ドキュメントに記載がなく、サポート対象として明記されていません
+> - WSL は WSL 2 のみサポートされています (WSL 1 は非サポート) 。 PowerShell ではなく WSL のターミナル内でインストール・起動します
+> - ハードウェア要件は 4 GB 以上のメモリ、 x64 または ARM64 の CPU です
+
+> [!WARNING]
+>
+> - Alpine Linux など _musl_ ベースのディストリビューションでは、 `bash` と `curl` が標準で入っていないため、先にインストールしてください
+>
+> ```bash
+> apk add bash curl
+> ```
+
+#### 1. _Claude Code_ インストール
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+> [!NOTE]
+>
+> - `~/.local/bin/claude` にインストールされます
+> - インストーラは PATH を変更しません。 PATH に `~/.local/bin` がない場合は、出力の `Setup notes:` に `Native installation exists but ~/.local/bin is not in your PATH.` と表示されます
+
+#### 2. ディレクトリにPATHを通す
+
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+```
+
+> [!NOTE]
+>
+> - ログインシェルが _zsh_ の場合は `~/.bashrc` を `~/.zshrc` に読み替えてください
+> - `claude --version` でバージョンが表示されればOKです
+
+> [!TIP]
+>
+> - Debian / Ubuntu は _apt_ 、 Fedora / RHEL は _dnf_ 、 Alpine は _apk_ のパッケージとしてもインストールできます
+> - RHEL / Fedora の場合は以下のとおりです
+>
+> ```bash
+> sudo tee /etc/yum.repos.d/claude-code.repo <<'EOF'
+> [claude-code]
+> name=Claude Code
+> baseurl=https://downloads.claude.ai/claude-code/rpm/stable
+> enabled=1
+> gpgcheck=1
+> gpgkey=https://downloads.claude.ai/keys/claude-code.asc
+> EOF
+> sudo dnf install claude-code
+> ```
+>
+> - 初回インストール時に GPG 鍵のフィンガープリントの確認を求められます。 `31DD DE24 DDFA B679 F42D 7BD2 BAA9 29FF 1A7E CACE` と一致することを確認してから承認してください
+> - パッケージマネージャでインストールした場合は自動更新されないため、 `sudo dnf upgrade claude-code` で更新します
+> - インストーラ ( `install.sh` ) と併用すると `claude` が 2 つになり、 PATH の順番で使われる方が変わるため、どちらか一方にしてください
+> - apt / apk の手順は [公式ドキュメント](https://code.claude.com/docs/ja/setup) を参照してください
 
 ## Claude Desktop
 
@@ -114,7 +176,7 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 
 ### Mac
 
-#### 1. *Claude Desktop* インストール
+#### 1. _Claude Desktop_ インストール
 
 ```zsh
 brew install --cask claude
@@ -130,6 +192,8 @@ brew install --cask claude
 
 - [Claude Support](https://support.claude.com/ja/)
 - [Claude Code Docs](https://code.claude.com/docs/ja/overview)
+- [Claude Code セットアップ](https://code.claude.com/docs/ja/setup)
+- [インストールのトラブルシューティング](https://code.claude.com/docs/ja/troubleshoot-install)
 - [Claude ダウンロード](https://claude.com/download)
 
 ### ブログ
