@@ -17,6 +17,7 @@
 - [Mac](#mac)
 - [Linux](#linux)
 - [nvm 自体のバージョンアップ](#nvm-自体のバージョンアップ)
+- [Node.js 切り替え後に古いバージョンの PATH が残る場合 (Mac / Linux)](#nodejs-切り替え後に古いバージョンの-path-が残る場合-mac--linux)
 - [参考資料](#参考資料)
 
 ## Windows
@@ -140,6 +141,44 @@ nvm use --lts
 
 > [!NOTE]
 > - Linux の *nvm* はインストールスクリプトが更新も兼ねており、再実行すると `~/.nvm` が新しいバージョンに更新されます
+
+## Node.js 切り替え後に古いバージョンの PATH が残る場合 (Mac / Linux)
+
+新しいバージョンの *Node.js* をインストールして切り替えた後も、 `echo $PATH` に古いバージョンの `~/.nvm/versions/node/v{バージョン番号}/bin` が残ることがあります。
+
+```zsh
+echo $PATH | tr ':' '\n' | grep nvm
+```
+
+```text
+/Users/<ユーザー名>/.nvm/versions/node/v26.13.1/bin   # .zshrc の読み込み時に nvm が追加した新しいバージョン
+/Users/<ユーザー名>/.nvm/versions/node/v24.13.1/bin   # 親プロセスから引き継いだ古いバージョン
+```
+
+> [!NOTE]
+> - 設定ファイル ( `~/.zshrc` 等) の問題ではなく、古いバージョンを使っていたときに起動したターミナルアプリやエディタ ( VS Code 、 Claude Code 等) の環境変数を、新しく開いたシェルが引き継いでいるためです
+> - 新しいバージョンが前に並ぶため `node` は新しいバージョンが使われ、実害はありません ( `which -a node` で確認できます)
+> - 同じ理由で、 `/opt/homebrew/bin` 等の PATH が重複して並ぶこともあります
+
+### 解消方法
+
+ターミナルアプリやエディタを**完全に終了してから起動し直してください**。新しいタブやウィンドウを開くだけでは、アプリが持っている古い PATH を再び引き継ぐことがあります。
+
+今開いているシェルだけを直す場合は、以下を実行します ( `v24.13.1` は残っている古いバージョンに置き換えてください) 。
+
+```zsh
+# zsh (Mac)
+path=(${path:#$HOME/.nvm/versions/node/v24.13.1/bin}) # 古いバージョンの PATH を削除
+typeset -U path                                       # 重複した PATH を削除
+```
+
+```bash
+# bash (Linux)
+export PATH=$(echo "$PATH" | tr ':' '\n' | grep -vx "$HOME/.nvm/versions/node/v24.13.1/bin" | awk '!seen[$0]++' | paste -sd: -) # 古いバージョンと重複した PATH を削除
+```
+
+> [!NOTE]
+> - Windows ( *nvm-windows* ) はシンボリックリンクの差し替えでバージョンを切り替え、 PATH は変わらないため、この現象は起きません
 
 ## 参考資料
 
